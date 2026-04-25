@@ -20,7 +20,7 @@ export function Footer() {
             <Link to="/" className="inline-block">
               <img 
                 src={logo} 
-                alt="Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"" 
+                alt={'Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"'} 
                 className="h-20 w-auto brightness-0 invert"
               />
             </Link>

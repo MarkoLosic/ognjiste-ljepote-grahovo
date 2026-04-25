@@ -30,7 +30,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center group">
             <img 
               src={logo} 
-              alt="Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"" 
+              alt={'Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"'} 
               className="h-12 md:h-16 w-auto transition-transform group-hover:scale-105"
             />
           </Link>
