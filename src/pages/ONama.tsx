@@ -77,7 +77,7 @@ export default function ONama() {
                 Naša priča
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>Ognjište Bosansko Grahovo nastalo je iz ljubavi prema ovom posebnom kraju i želje da se njegova ljepota podijeli sa svijetom. Naš cilj je očuvati tradiciju, promovisati prirodne ljepote i povezati ljude sa korijenima.</p>
+                <p>Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo" nastalo je iz ljubavi prema ovom posebnom kraju i želje da se njegova ljepota podijeli sa svijetom. Naš cilj je očuvati tradiciju, promovisati prirodne ljepote i povezati ljude sa korijenima.</p>
                 <p>
                   Bosansko Grahovo je mjesto gdje se vrijeme čini usporenijim, gdje se
                   još uvijek cijene tradicionalne vrijednosti i gdje priroda vlada
