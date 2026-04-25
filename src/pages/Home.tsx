@@ -30,8 +30,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-              Ognjište Bosansko Grahovo
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight max-w-5xl mx-auto text-center [text-wrap:balance]">
+              Planinarsko Ekološko Društvo{" "}
+              <span className="block mt-2">&quot;Ognjište Bosansko Grahovo&quot;</span>
             </h1>
           </motion.div>
           

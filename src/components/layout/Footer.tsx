@@ -20,7 +20,7 @@ export function Footer() {
             <Link to="/" className="inline-block">
               <img 
                 src={logo} 
-                alt="Ognjište Bosansko Grahovo" 
+                alt="Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"" 
                 className="h-20 w-auto brightness-0 invert"
               />
             </Link>
@@ -92,7 +92,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-primary-foreground/10 mt-10 pt-8 text-center text-sm text-primary-foreground/50">
-          <p>© {new Date().getFullYear()} Ognjište Bosansko Grahovo. Sva prava zadržana.</p>
+          <p>© {new Date().getFullYear()} Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo". Sva prava zadržana.</p>
         </div>
       </div>
     </footer>
