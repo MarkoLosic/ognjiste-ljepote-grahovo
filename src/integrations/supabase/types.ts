@@ -119,13 +119,7 @@ export type Database = {
         Args: { original_uploaded_by: string }
         Returns: string
       }
-      has_role: {
-        Args: {
-          _role: Database["public"]["Enums"]["app_role"]
-          _user_id: string
-        }
-        Returns: boolean
-      }
+      is_current_user_admin: { Args: never; Returns: boolean }
     }
     Enums: {
       app_role: "admin" | "user"
