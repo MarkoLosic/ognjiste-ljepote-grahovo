@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import townCenter from "@/assets/town-center.jpg";
 import village1 from "@/assets/village-1.jpg";
@@ -12,10 +14,6 @@ import unistaImg from "@/assets/unista.jpg";
 import crniLugImg from "@/assets/crni-lug.jpg";
 import koritaImg from "@/assets/korita.jpg";
 const simpleVillages = [{
-  name: "Resanovci",
-  description: "Tradicionalno selo poznato po očuvanoj arhitekturi i gostoljubivim domaćinima.",
-  image: resanovciImg
-}, {
   name: "Uništa",
   description: "Mirno selo smješteno u srcu zelene doline, idealno za bijeg od gradske vreve.",
   image: unistaImg
