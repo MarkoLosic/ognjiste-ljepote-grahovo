@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import townCenter from "@/assets/town-center.jpg";
 import village1 from "@/assets/village-1.jpg";
@@ -12,10 +14,6 @@ import unistaImg from "@/assets/unista.jpg";
 import crniLugImg from "@/assets/crni-lug.jpg";
 import koritaImg from "@/assets/korita.jpg";
 const simpleVillages = [{
-  name: "Resanovci",
-  description: "Tradicionalno selo poznato po očuvanoj arhitekturi i gostoljubivim domaćinima.",
-  image: resanovciImg
-}, {
   name: "Uništa",
   description: "Mirno selo smješteno u srcu zelene doline, idealno za bijeg od gradske vreve.",
   image: unistaImg
@@ -29,6 +27,13 @@ const simpleVillages = [{
   image: koritaImg
 }];
 const detailedVillages = [{
+  name: "Resanovci",
+  description: `Sa sjevero-zapadne strane teritorije opštine Bosansko Grahovo su Resanovci. Tu je i otvoreni prijevoj prema dolini Une, preko doline Prastruge, čije je dno na visini od oko 860 metara nadmorske visine. Prema opštini Drvar je udolina između Strlježnice i Jadovnika, čija je visina 980 metara te se na tom pravcu nalazi magistralna cesta Bosansko Grahovo – Drvar.
+
+Pećina Lednica (Resanovačka pećina ili Ledenica) se nalazi u selu Resanovci 2,5 kilometra udaljena od magistralne ceste Bosansko Grahovo-Drvar. Prije rata bila je osvjetljena, a krasilo ju je izuzetno bogatstvo pećinskog nakita. U vremenu nakon rata rasvjeta je pokradena, a dio nakita uništen i odnešen. Pećina je specijalni geološki rezervat koju čini 13 dvorana ukupne dužine 697,5 metara, a površina 8.477 m2. U maju 2012. pokrenut je projekt revitalizacije ove pećine i Šatorskog jezera uz podršku Europske unije.`,
+  image: resanovciImg,
+  reverse: false
+}, {
   name: "Preodac",
   description: `Na sjevernim padinama planine Šator, na nadmorskoj visini 860 m smješteno je naselje Preodac, pa se može reći da je Preodac smješten na planini Šator. Pobočni dijelovi Šatora, Vrščić i Vranjuša opasuju Preodac sa južne strane. Na toj strani je i Šatorsko jezero. Sa istoka ga omeđavaju Veliki i Mali Kuk. Od Tičeva na zapadu omeđuje ga padina Strmac i šuma Balinjača, a sa sjeverne strane više kosa i brijegova, među kojima se ističe Kuk.
 
@@ -36,7 +41,7 @@ Leži na tromeđi općina Bosansko Grahovo, Glamoč i Drvar. U prošlosti, osamd
 
 U naselju se nalazi i jedno malo jezero. Samo naselje je zdjeličarskog oblika, sredina mu je najniža i podvodna. Preko Tičeva cestom vezano je za Bosansko Grahovo. Ovo selo poznato je i po Momčilovoj kuli koja sa vrha litice baca pogled ka selu.`,
   image: preodacImg,
-  reverse: false
+  reverse: true
 }, {
   name: "Peći",
   description: `U naselju ima 60 izvora žive vode. Područje općine između Bosanskog Grahova i Resanovci snabdjeva se vodovodom sa izvora u ovom naselju. Vodovod je izgrađen donacijom vlade Japana.
@@ -45,7 +50,7 @@ U naselju postoji Gradina, rimsko utvrđenje iz kasne antike, nedovoljno istraž
 
 Iznad sela se proteže planina Ujilica, kada se popnete na njene vrhove imate predivan pogled ka Hrvatskoj i Jadranskom moru.`,
   image: peciImg,
-  reverse: true
+  reverse: false
 }, {
   name: "Obljaj",
   description: `Obljaj je naseljeno mjesto u Bosni i Hercegovini, u opštini Bosansko Grahovo, koje administrativno pripada Federaciji Bosne i Hercegovine. Prema popisu stanovništva iz 2013. u naselju je živjelo 108 stanovnika. Prema opisu iz 1891. godine selo Obljaj je smešteno pod glavicom Obljojom ili Obljajkom. Po tom brdu je mesto ime dobilo. To je vrlo lepo selo, ali bez ikakvih starina.
@@ -56,14 +61,14 @@ Pred Drugi svetski rat delovalo je Nacionalno društvo "Krajišnik" sa sedištem
 
 U naselju se nalazila rodna kuća Gavrila Principa u kojoj je do jula 1995. godine bio muzej sa eksponatima. Ova kuća prva je spaljena od strane pripadnika Sedme gardijske brigade Vojske Hrvatske prilikom njihovog ulaska u Obljaj u ljeto 1995. Od kuće je tada ostao samo kameni temelj, dok je gornji sprat od drveta potpuno izgoreo. U plamenu su izgorjeli i neki dokumenti, kao originalan plan za atentat u Sarajevu. Povodom jubileja atentata planirano je obnavljanje njegove rodne kuće. Kuća je ponovo otvorena na Vidovdan 28. juna 2014. godine. Na donjem spratu je muzejska postavka o Gavrilu Principu, a na gornjem je rekonstruisan namještaj iz vremena u kojem se u kući stanovalo.`,
   image: obljajImg,
-  reverse: false
+  reverse: true
 }, {
   name: "Stožišta",
   description: `Naselje koje se nalazi na samoj granici sa Hrvatskom. Prepuno prirodnih ljepota, kao i uvala koje su tipične za kraško područje. Bogato sa šumskim bogatstvima i kršnom klimom.
 
 Stožišta nude jedinstven pogled na okolne planine i predstavljaju savršeno odredište za ljubitelje netaknute prirode i mirnog seoskog života.`,
   image: stozistaImg,
-  reverse: true
+  reverse: false
 }];
 export default function GradISela() {
   return <Layout>
@@ -221,7 +226,7 @@ export default function GradISela() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {simpleVillages.map((village, index) => <motion.div key={village.name} initial={{
             opacity: 0,
             y: 20
@@ -233,20 +238,42 @@ export default function GradISela() {
           }} transition={{
             duration: 0.6,
             delay: index * 0.1
-          }} className="card-nature group">
-                <div className="relative h-48 overflow-hidden">
-                  <img src={village.image} alt={village.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                    {village.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {village.description}
-                  </p>
-                </div>
+          }}>
+                <Link to="/ostala-sela" className="card-nature group block h-full hover:shadow-xl transition-shadow">
+                  <div className="relative h-48 overflow-hidden">
+                    <img src={village.image} alt={village.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
+                      {village.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                      {village.description}
+                    </p>
+                    <span className="inline-flex items-center text-accent text-sm font-medium group-hover:gap-2 gap-1 transition-all">
+                      Pogledaj još sela <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
+                </Link>
               </motion.div>)}
           </div>
+
+          <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6
+          }} className="text-center mt-12">
+            <Link to="/ostala-sela" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium">
+              Otkrijte sva ostala sela <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+
         </div>
       </section>
     </Layout>;
