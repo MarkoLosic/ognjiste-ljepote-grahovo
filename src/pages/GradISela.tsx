@@ -226,7 +226,7 @@ export default function GradISela() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {simpleVillages.map((village, index) => <motion.div key={village.name} initial={{
             opacity: 0,
             y: 20
@@ -238,20 +238,42 @@ export default function GradISela() {
           }} transition={{
             duration: 0.6,
             delay: index * 0.1
-          }} className="card-nature group">
-                <div className="relative h-48 overflow-hidden">
-                  <img src={village.image} alt={village.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                    {village.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {village.description}
-                  </p>
-                </div>
+          }}>
+                <Link to="/ostala-sela" className="card-nature group block h-full hover:shadow-xl transition-shadow">
+                  <div className="relative h-48 overflow-hidden">
+                    <img src={village.image} alt={village.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
+                      {village.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                      {village.description}
+                    </p>
+                    <span className="inline-flex items-center text-accent text-sm font-medium group-hover:gap-2 gap-1 transition-all">
+                      Pogledaj još sela <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
+                </Link>
               </motion.div>)}
           </div>
+
+          <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6
+          }} className="text-center mt-12">
+            <Link to="/ostala-sela" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium">
+              Otkrijte sva ostala sela <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+
         </div>
       </section>
     </Layout>;
