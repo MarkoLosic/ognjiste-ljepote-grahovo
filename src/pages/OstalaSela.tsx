@@ -27,12 +27,52 @@ type Village = {
 // Sela opštine Bosansko Grahovo koja nisu prikazana na stranici "Grad i sela"
 const otherVillages: Village[] = [
   {
+    name: "Bastasi",
+    description:
+      "Selo u sastavu opštine Bosansko Grahovo, smješteno u podnožju okolnih planina.",
+    details:
+      "Bastasi su naselje smješteno u podnožju planina koje okružuju grahovsku kotlinu. Kraj je bogat šumama, izvorima pitke vode i pašnjacima, a mještani se tradicionalno bave stočarstvom i poljoprivredom. Selo čuva autentični seoski ambijent i tradicionalnu arhitekturu.",
+    image: generic1,
+  },
+  {
+    name: "Crnac",
+    description:
+      "Tradicionalno selo grahovskog kraja okruženo šumama i livadama.",
+    details:
+      "Crnac je tradicionalno selo grahovskog kraja, okruženo gustim šumama i prostranim livadama. Mirna lokacija i očuvana priroda čine ga privlačnim za posjetioce koji traže predah od gradskog života i autentično iskustvo seoske svakodnevice.",
+    image: generic2,
+  },
+  {
     name: "Donje Peulje",
     description:
       "Selo u jugoistočnom dijelu opštine, okruženo pašnjacima i šumama planine Staretine.",
     details:
       "Donje Peulje su smještene na padinama planine Staretine, u jugoistočnom dijelu opštine Bosansko Grahovo. Selo je tradicionalno orijentirano na stočarstvo i poljoprivredu, a okolni pašnjaci i šume oduvijek su bili glavni izvor egzistencije mještana. Iz sela se pruža predivan pogled na grahovska polja i okolne planinske vrhove.",
+    image: generic3,
+  },
+  {
+    name: "Donji Kazanci",
+    description:
+      "Naselje u zapadnom dijelu opštine, blizu planine Dinare.",
+    details:
+      "Donji Kazanci se nalaze u zapadnom dijelu opštine Bosansko Grahovo, u blizini moćne planine Dinare. Položaj sela omogućava lijep pogled na dinarske vrhove, a okolni teren je idealan za planinarenje i istraživanje krških fenomena karakterističnih za ovaj kraj.",
+    image: generic4,
+  },
+  {
+    name: "Donji Tiškovac",
+    description:
+      "Selo poznato po željezničkoj stanici na pruzi Bosanski Novi – Knin.",
+    details:
+      "Donji Tiškovac je posebno zanimljivo selo zbog željezničke stanice koja se nalazi na pruzi Bosanski Novi – Knin. Pruga prolazi kroz područje opštine u dužini od oko 1700 metara, a Donji Tiškovac je jedna od ključnih tačaka tog koridora. Selo ima dugu tradiciju vezanu za željeznicu.",
     image: generic1,
+  },
+  {
+    name: "Duler",
+    description:
+      "Malo seosko naselje grahovskog kraja okruženo netaknutom prirodom.",
+    details:
+      "Duler je malo seosko naselje grahovskog kraja, okruženo netaknutom prirodom. Selo je idealno za posjetioce koji traže mir, tišinu i autentično iskustvo života u skladu sa prirodom. Tradicionalna arhitektura kuća svjedoči o bogatoj prošlosti ovog kraja.",
+    image: generic2,
   },
   {
     name: "Gornje Peulje",
@@ -40,7 +80,15 @@ const otherVillages: Village[] = [
       "Naselje na padinama Staretine, sa pogledom na prostrana grahovska polja.",
     details:
       "Gornje Peulje su naselje smješteno na višoj nadmorskoj visini od Donjih Peulja, na padinama planine Staretine. Bogato izvorima pitke vode i okruženo bukovim i hrastovim šumama, mjesto je idealno za planinare i ljubitelje netaknute prirode. Tradicionalna kamena gradnja kuća svjedoči o bogatoj prošlosti ovog kraja.",
-    image: generic2,
+    image: generic3,
+  },
+  {
+    name: "Gornji Kazanci",
+    description:
+      "Selo na većoj nadmorskoj visini od Donjih Kazanaca, blizu Dinare.",
+    details:
+      "Gornji Kazanci se nalaze na većoj nadmorskoj visini u zapadnom dijelu opštine, u blizini planine Dinare. Selo nudi prelijepe poglede na okolne planinske masive, a okolina je bogata pašnjacima, šumama i krškim fenomenima karakterističnim za ovaj kraj.",
+    image: generic4,
   },
   {
     name: "Grkovci",
@@ -48,7 +96,7 @@ const otherVillages: Village[] = [
       "Tradicionalno selo u kraškoj dolini, poznato po izvorima pitke vode.",
     details:
       "Grkovci se nalaze u tipičnoj kraškoj dolini, sa brojnim izvorima pitke vode koji su oduvijek napajali mještane i njihova stada. Selo čuva tradicionalnu arhitekturu sa kamenim kućama i suhozidima koji okružuju imanja. Mještani se i danas bave stočarstvom i čuvaju stare običaje.",
-    image: generic3,
+    image: generic1,
   },
   {
     name: "Isjek",
@@ -56,7 +104,7 @@ const otherVillages: Village[] = [
       "Mirno seosko naselje okruženo šumama, idealno za odmor u prirodi.",
     details:
       "Isjek je malo, mirno selo okruženo gustim šumama. Udaljeno od glavnih saobraćajnica, predstavlja oazu mira i tišine. Pogodno je za posjetioce koji traže odmor u netaknutoj prirodi, šetnje šumskim stazama i upoznavanje sa tradicionalnim načinom života.",
-    image: generic4,
+    image: generic2,
   },
   {
     name: "Jaruga",
@@ -64,21 +112,22 @@ const otherVillages: Village[] = [
       "Selo smješteno uz potok, sa očuvanom prirodom i tradicionalnom arhitekturom.",
     details:
       "Jaruga se nalazi uz istoimeni potok koji prolazi kroz selo i čini ga posebno privlačnim. Mještani su sačuvali tradicionalnu arhitekturu sa kamenim kućama i drvenim mostićima preko potoka. Okolne livade i šume bogate su biljnim i životinjskim svijetom.",
-    image: generic1,
+    image: generic3,
   },
   {
-    name: "Kazanci",
-    description: "Naselje na zapadnom dijelu opštine, blizu planine Dinare.",
+    name: "Kesići",
+    description:
+      "Tradicionalno selo grahovskog kraja sa očuvanom seoskom arhitekturom.",
     details:
-      "Kazanci se nalaze u zapadnom dijelu opštine Bosansko Grahovo, u blizini moćne planine Dinare. Položaj sela omogućava lijep pogled na dinarske vrhove, a okolni teren je idealan za planinarenje i istraživanje krških fenomena karakterističnih za ovaj kraj.",
-    image: generic2,
+      "Kesići su tradicionalno selo grahovskog kraja koje je sačuvalo autentičnu seosku arhitekturu i način života. Okolne livade, šume i pašnjaci čine ovo mjesto privlačnim za ljubitelje netaknute prirode i seoskog turizma.",
+    image: generic4,
   },
   {
     name: "Luka",
     description: "Malo selo na obroncima planina, poznato po pitkim izvorima.",
     details:
       "Luka je tradicionalno malo selo smješteno na obroncima planina koje okružuju grahovsku kotlinu. Brojni izvori pitke vode su prepoznatljiv simbol ovog mjesta. Mještani njeguju stare zanate i običaje, a selo je odlična polazna tačka za izlete u okolnu prirodu.",
-    image: generic3,
+    image: generic1,
   },
   {
     name: "Maleševci",
@@ -86,14 +135,22 @@ const otherVillages: Village[] = [
       "Selo u brdovitom predjelu, sa autentičnim seoskim ambijentom.",
     details:
       "Maleševci leže u brdovitom predjelu opštine, sa autentičnim seoskim ambijentom koji je odolio modernim promjenama. Stari kameni objekti, suhozidi i tradicionalne staze daju mjestu poseban šarm. Selo je idealno za one koji žele da osjete duh starog grahovskog kraja.",
-    image: generic4,
+    image: generic2,
+  },
+  {
+    name: "Malo Tičevo",
+    description:
+      "Selo na tičevskoj visoravni, dio prolaza prema Glamoču.",
+    details:
+      "Malo Tičevo se nalazi na tičevskoj visoravni, na nadmorskoj visini od oko 1098 metara. Visoravan predstavlja prirodni prolaz prema opštini Glamoč i bogata je pašnjacima i šumama. Sa sela se pruža impresivan pogled na okolne planinske masive.",
+    image: generic3,
   },
   {
     name: "Marinkovci",
     description: "Naselje u dolini, okruženo livadama i šumama.",
     details:
       "Marinkovci su smješteni u plodnoj dolini, okruženi prostranim livadama i šumama. Selo je tradicionalno orijentirano na poljoprivredu i stočarstvo. Mirna atmosfera i lijepi prirodni pejzaži privlače posjetioce koji traže predah od gradskog života.",
-    image: generic1,
+    image: generic4,
   },
   {
     name: "Mračaj",
@@ -101,6 +158,14 @@ const otherVillages: Village[] = [
       "Selo na nadmorskoj visini od oko 400 m, najniža tačka opštine.",
     details:
       "Mračaj se nalazi na nadmorskoj visini od oko 400 metara i predstavlja najnižu tačku opštine Bosansko Grahovo. Zbog povoljnog položaja i blaže klime, selo ima karakterističan biljni svijet. Okolina je bogata šumama i potocima, a sam položaj sela ga čini posebno zanimljivim za istraživanje.",
+    image: generic1,
+  },
+  {
+    name: "Mramorje",
+    description:
+      "Naselje grahovskog kraja sa očuvanom prirodom i tradicijom.",
+    details:
+      "Mramorje je naselje grahovskog kraja koje čuva bogatstvo prirode i kulturnog nasljeđa. Okolne šume i livade pružaju idealne uslove za stočarstvo, a mještani njeguju tradicionalan način života koji je očuvan kroz generacije.",
     image: generic2,
   },
   {
@@ -111,19 +176,19 @@ const otherVillages: Village[] = [
     image: generic3,
   },
   {
-    name: "Pribelja",
+    name: "Pečenci",
     description:
-      "Naselje u sjeveroistočnom dijelu opštine, prema Glamoču.",
+      "Mirno seosko naselje okruženo livadama i šumama grahovskog kraja.",
     details:
-      "Pribelja se nalazi u sjeveroistočnom dijelu opštine Bosansko Grahovo, blizu granice sa opštinom Glamoč. Položaj sela na visoravni omogućava prelijepe poglede na okolne planine. Mještani se tradicionalno bave stočarstvom i poljoprivredom.",
+      "Pečenci su mirno seosko naselje grahovskog kraja, okruženo prostranim livadama i šumama. Selo je idealno za posjetioce koji traže mir, tišinu i predah u krilu prirode. Tradicionalni način života i očuvana arhitektura čine ga posebno privlačnim.",
     image: generic4,
   },
   {
-    name: "Radanovci",
+    name: "Pržine",
     description:
-      "Selo u kraškom predjelu, poznato po pašnjacima i stočarstvu.",
+      "Selo grahovskog kraja okruženo pašnjacima i šumama.",
     details:
-      "Radanovci su selo u tipičnom kraškom predjelu, sa prostranim pašnjacima koji su oduvijek bili osnova stočarske privrede. Krški fenomeni — vrtače, ponori i izvori — daju ovom kraju jedinstven karakter. Selo je odlično polazište za istraživanje grahovskog krša.",
+      "Pržine su selo grahovskog kraja okruženo prostranim pašnjacima i šumama. Mještani se tradicionalno bave stočarstvom, a okolni krški pejzaž daje selu jedinstven karakter. Mirno okruženje čini ga privlačnim za sve koji žele da iskuse autentični seoski život.",
     image: generic1,
   },
   {
@@ -135,19 +200,27 @@ const otherVillages: Village[] = [
     image: generic2,
   },
   {
-    name: "Tičevo",
-    description:
-      "Visoravan na nadmorskoj visini od 1098 m, prolaz prema Glamoču.",
-    details:
-      "Tičevska visoravan se nalazi na nadmorskoj visini od 1098 metara i predstavlja prirodni prolaz na istok prema opštini Glamoč. Visoravan je bogata pašnjacima i šumama, a sa nje se pruža impresivan pogled na okolne planinske masive. Tičevo je takođe važna saobraćajna tačka grahovskog kraja.",
-    image: generic3,
-  },
-  {
     name: "Ugarci",
     description: "Naselje u dolini, okruženo planinama i šumama.",
     details:
       "Ugarci su naselje smješteno u dolini, okruženo visokim planinama i gustim šumama. Mirna i zaštićena lokacija čini selo idealnim za odmor i rekreaciju. Tradicionalna gradnja i očuvana priroda daju Ugarcima poseban karakter.",
+    image: generic3,
+  },
+  {
+    name: "Varoš",
+    description:
+      "Naselje grahovskog kraja sa bogatom istorijom i tradicijom.",
+    details:
+      "Varoš je naselje grahovskog kraja sa bogatom istorijom i tradicijom. Smješteno u prirodnom ambijentu, čuva autentični duh ovog dijela Bosne. Mještani se bave tradicionalnim djelatnostima, a okolina pruža brojne mogućnosti za istraživanje.",
     image: generic4,
+  },
+  {
+    name: "Veliko Tičevo",
+    description:
+      "Veće naselje na tičevskoj visoravni, prolaz prema Glamoču.",
+    details:
+      "Veliko Tičevo se nalazi na tičevskoj visoravni, na nadmorskoj visini od 1098 metara, i predstavlja veće naselje ovog dijela opštine. Visoravan je važan prirodni prolaz prema opštini Glamoč. Bogata pašnjacima i šumama, ovo područje je takođe značajna saobraćajna tačka grahovskog kraja.",
+    image: generic1,
   },
   {
     name: "Vidovići",
@@ -155,22 +228,23 @@ const otherVillages: Village[] = [
       "Selo na padinama planine, sa pogledom na okolna polja.",
     details:
       "Vidovići su smješteni na padinama planine, sa kojih se pruža prelijep pogled na okolna grahovska polja. Selo je dobilo ime po porodici Vidović, a tradicionalna kamena arhitektura kuća svjedoči o bogatoj prošlosti ovog mjesta.",
-    image: generic1,
-  },
-  {
-    name: "Donji Tiškovac",
-    description:
-      "Selo poznato po željezničkoj stanici na pruzi Bosanski Novi – Knin.",
-    details:
-      "Donji Tiškovac je posebno zanimljivo selo zbog željezničke stanice koja se nalazi na pruzi Bosanski Novi – Knin. Pruga prolazi kroz područje opštine u dužini od oko 1700 metara, a Donji Tiškovac je jedna od ključnih tačaka tog koridora. Selo ima dugu tradiciju vezanu za željeznicu.",
     image: generic2,
   },
   {
-    name: "Bosanski Drenovac",
-    description: "Naselje sa željezničkom stanicom, smješteno uz prugu.",
+    name: "Zaseok",
+    description:
+      "Malo naselje grahovskog kraja okruženo netaknutom prirodom.",
     details:
-      "Bosanski Drenovac je naselje koje se razvilo uz željezničku prugu Bosanski Novi – Knin, sa značajnom željezničkom stanicom. Pored saobraćajne važnosti, selo je okruženo prelijepim prirodnim ambijentom i ima dugu tradiciju.",
+      "Zaseok je malo naselje grahovskog kraja okruženo netaknutom prirodom. Mirna lokacija, čisti zrak i blizina šuma čine ga idealnim za odmor i rekreaciju. Tradicionalni način života mještana čuva autentični duh ovog dijela Bosne.",
     image: generic3,
+  },
+  {
+    name: "Zebe",
+    description:
+      "Tradicionalno selo grahovskog kraja sa očuvanom prirodom.",
+    details:
+      "Zebe su tradicionalno selo grahovskog kraja sa očuvanom prirodom i tradicijom. Okolni pašnjaci, šume i izvori vode čine ovo mjesto privlačnim za ljubitelje seoskog turizma. Mještani njeguju stare običaje i tradicionalne djelatnosti.",
+    image: generic4,
   },
 ];
 
