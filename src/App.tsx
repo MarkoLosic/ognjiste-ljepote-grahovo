@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import Home from "./pages/Home";
 import GradISela from "./pages/GradISela";
+import OstalaSela from "./pages/OstalaSela";
 import Planine from "./pages/Planine";
 import Galerija from "./pages/Galerija";
 import Aktivnosti from "./pages/Aktivnosti";
