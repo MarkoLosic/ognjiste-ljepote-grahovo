@@ -69,17 +69,17 @@ const otherVillages: Village[] = [
   {
     name: "Donji Tiškovac",
     description:
-      "Historijsko selo na granici s Hrvatskom, mjesto ustanka 1875. godine.",
+      "Istorijsko selo na granici sa Hrvatskom, mjesto ustanka 1875. godine.",
     details:
-      "Donji Tiškovac je historijski važno selo u opštini Bosansko Grahovo, smješteno na sjeverozapadnom dijelu opštine, uz granicu s Republikom Hrvatskom. Prema popisu iz 2013. godine, u selu je živjelo 33 stanovnika, isključivo srpske nacionalnosti. Kroz područje ovog sela prolazi historijska željeznička pruga Bosanski Novi–Knin u dužini od 1.700 metara, s tim što se stanica nalazi u obližnjem Bosanskom Drenovcu. Historijsku važnost Donjeg Tiškovca potvrđuje i činjenica da se upravo ovdje, 15. septembra 1875. godine, odvijao jedan od ključnih trenutaka oslobodilačkog ustanka, kada su ustanici uz pomoć braće Plavanjaca zauzeli pograničnu kulu i protjerali osmanske vlasti s ovoga prostora. U blizini sela nalaze se i značajni vodni resursi — izvori koji su prepoznati kao potencijal za vodosnabdijevanje opštine.",
+      "Donji Tiškovac je istorijski važno selo u opštini Bosansko Grahovo, smješteno u sjeverozapadnom dijelu opštine, uz granicu sa Republikom Hrvatskom. Prema popisu iz 2013. godine, u selu je živjelo 33 stanovnika, isključivo srpske nacionalnosti. Kroz područje ovog sela prolazi istorijska željeznička pruga Bosanski Novi–Knin u dužini od 1.700 metara, s tim što se stanica nalazi u obližnjem Bosanskom Drenovcu. Istorijsku važnost Donjeg Tiškovca potvrđuje i činjenica da se upravo ovdje, 15. septembra 1875. godine, odvijao jedan od ključnih trenutaka oslobodilačkog ustanka, kada su ustanici uz pomoć braće Plavanjaca zauzeli pograničnu kulu i protjerali osmanske vlasti sa ovog prostora. U blizini sela nalaze se i značajni vodni resursi — izvori koji su prepoznati kao potencijal za vodosnabdijevanje opštine.",
     image: generic2,
   },
   {
     name: "Duler",
     description:
-      "Selo na zaštićenoj sunčanoj padini s pristupom pašnjacima i šumama.",
+      "Selo na zaštićenoj sunčanoj padini sa pristupom pašnjacima i šumama.",
     details:
-      "Duler je selo u opštini Bosansko Grahovo, smješteno u okviru karakterističnog dinarskog planinskog krajolik. Kao i većina grahovskih sela, i Duler je osnovan na prirodno povoljnoj lokaciji — na zaštićenoj sunčanoj padini s pristupom pašnjacima i šumama. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, koji su kroz historiju bili osnova privređivanja u cijelom Grahovskom kraju. Selo je asfaltnom putnom mrežom spojen s centrom opštine Bosansko Grahovo, a smješteno je u nizu manjih naselja koja tvore gustu mrežu zajednica raspoređenih po obodima kraških polja i brdskim padinama opštine.",
+      "Duler je selo u opštini Bosansko Grahovo, smješteno u okviru karakterističnog dinarskog planinskog pejzaža. Kao i većina grahovskih sela, i Duler je osnovan na prirodno povoljnoj lokaciji — na zaštićenoj sunčanoj padini sa pristupom pašnjacima i šumama. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, koji su kroz istoriju bili osnova privređivanja u cijelom grahovskom kraju. Selo je asfaltnom putnom mrežom spojeno sa centrom opštine Bosansko Grahovo, a smješteno je u nizu manjih naselja koja tvore gustu mrežu zajednica raspoređenih po obodima kraških polja i brdskim padinama opštine.",
     image: generic3,
   },
   {
