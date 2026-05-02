@@ -29,221 +29,249 @@ const otherVillages: Village[] = [
   {
     name: "Bastasi",
     description:
-      "Selo u sastavu opštine Bosansko Grahovo, smješteno u podnožju okolnih planina.",
+      "Malo selo s historijskim rudnikom boksita iz doba kralja Tvrtka I Kotromanića.",
     details:
-      "Bastasi su naselje smješteno u podnožju planina koje okružuju grahovsku kotlinu. Kraj je bogat šumama, izvorima pitke vode i pašnjacima, a mještani se tradicionalno bave stočarstvom i poljoprivredom. Selo čuva autentični seoski ambijent i tradicionalnu arhitekturu.",
+      "Bastasi su malo selo smješteno u opštini Bosansko Grahovo, na nadmorskoj visini tipičnoj za dinarski krški reljef ovog područja. Prema popisu stanovništva iz 2013. godine, u selu je živjelo 20 stanovnika, isključivo srpske nacionalnosti. Iako malo po veličini, Bastasi su zanimljivi s historijskog aspekta — u ovom kraju potvrđeno je postojanje starog rudnika boksita koji je, prema historijskim pretpostavkama, bio otvoren još u doba vladavine bosanskog kralja Tvrtka I Kotromanića, u periodu bosanskog kraljevstva. U blizini Bastasa, u susjednoj opštini Drvar, nalazi se i poznati hidrološki fenomen — kraška vrela Bastašica, s kojim je ponorski sistem Resanovačkih pećina povezan podzemnim vodotocima. Prema istraživanjima iz 1969. godine, utvrđena je veza između ponora Struge i Bastašice bojenjem vode, pri čemu pravolinijska udaljenost iznosi 11 km. Selo je asfaltnim putem povezano s centrom opštine Bosansko Grahovo.",
     image: generic1,
   },
   {
     name: "Crnac",
     description:
-      "Tradicionalno selo grahovskog kraja okruženo šumama i livadama.",
+      "Selo u karakterističnom kraškom ambijentu zapadne Bosne, oslonjeno na stočarstvo i šumarstvo.",
     details:
-      "Crnac je tradicionalno selo grahovskog kraja, okruženo gustim šumama i prostranim livadama. Mirna lokacija i očuvana priroda čine ga privlačnim za posjetioce koji traže predah od gradskog života i autentično iskustvo seoske svakodnevice.",
+      "Crnac je selo u opštini Bosansko Grahovo koje se smjestilo u karakterističnom kraškom ambijentu zapadne Bosne. Kao i većina grahovskih naselja, i Crnac se nalazi na obodima kraških polja, zaštićen od vjetra i nepogoda brdskim padinama koje prirodno okružuju Grahovsko polje. Selo pripada karakterističnom dinarskogorskom krajoliku ovoga dijela BiH, u koji se smjenjuju pašnjaci, livade i šumska bogatstva. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, što ostaje i danas jedan od rijetkih privrednih potencijala ovog kraja. Crnac je, poput ostalih sela opštine, asfaltnom putnom mrežom spojen s centrom opštine.",
     image: generic2,
+  },
+  {
+    name: "Crni Lug",
+    description:
+      "Sjedište Mjesne zajednice koja obuhvata veći broj okolnih naselja grahovskog kraja.",
+    details:
+      "Crni Lug je selo u opštini Bosansko Grahovo s dugom historijskom tradicijom na ovome prostoru. Administrativno je bilo dio Kotara Bosanskog Grahova i tokom Drugog svjetskog rata. Crni Lug je sjedište Mjesne zajednice koja obuhvata veći broj okolnih naselja — Gornje i Donje Peulje, Gornji i Donji Kazanci, Nuglašicu, Bastase, Jarugi, Pržine i Grkovce. Pored sela protječe kraški vodotok, a okolina obiluje livadama i šumama bukve i jele karakterističnim za dinarski planinski pojas. Prema evidencijama o povratku, u MZ Crni Lug nakon rata je ukupno povratilo oko 730 lica. U selu je zabilježeno historijsko prisustvo još od prvih doseljavanja Slavena u ovaj kraj, a u blizini su otkriveni i ostaci iz rimskog perioda. Crni Lug je asfaltnim putem dobro spojen s ostalim naseljima opštine i njenim sjedištem.",
+    image: generic3,
   },
   {
     name: "Donje Peulje",
     description:
-      "Selo u jugoistočnom dijelu opštine, okruženo pašnjacima i šumama planine Staretine.",
+      "Naselje u sklopu MZ Crni Lug, obuhvaćeno projektima elektrifikacije povratničkih sela.",
     details:
-      "Donje Peulje su smještene na padinama planine Staretine, u jugoistočnom dijelu opštine Bosansko Grahovo. Selo je tradicionalno orijentirano na stočarstvo i poljoprivredu, a okolni pašnjaci i šume oduvijek su bili glavni izvor egzistencije mještana. Iz sela se pruža predivan pogled na grahovska polja i okolne planinske vrhove.",
-    image: generic3,
+      "Donje Peulje je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Smješteno je u tipičnom dinarsko-kraškom reljefu, okruženo brdima i pašnjacima. Poput svih naselja ovog kraja, i Donje Peulje je u ratu 1990-ih pretrpjelo teška razaranja — stambeni objekti su u velikoj mjeri bili uništeni, a povratak stanovnika bio je postepen. U sklopu projekata elektrifikacije povratničkih naselja, Donje Peulje je bilo obuhvaćeno izgradnjom dalekovoda, zajedno sa selima Isjek i Radlovići. Tradicija ovog sela vezana je uz stočarstvo i sitnu poljoprivredu, a okolni pašnjaci i šume pružaju povoljne uvjete za ove djelatnosti i danas.",
+    image: generic4,
   },
   {
     name: "Donji Kazanci",
     description:
-      "Naselje u zapadnom dijelu opštine, blizu planine Dinare.",
+      "Selo u okviru MZ Crni Lug, dvojno naselje s Gornjim Kazancima.",
     details:
-      "Donji Kazanci se nalaze u zapadnom dijelu opštine Bosansko Grahovo, u blizini moćne planine Dinare. Položaj sela omogućava lijep pogled na dinarske vrhove, a okolni teren je idealan za planinarenje i istraživanje krških fenomena karakterističnih za ovaj kraj.",
-    image: generic4,
+      "Donji Kazanci su selo u opštini Bosansko Grahovo, smješteno u okviru Mjesne zajednice Crni Lug. Zajedno s Gornjim Kazancima čine jedno od karakterističnih dvojnih naselja ovog kraja u kojima gornji i donji dio nose ista osnovna imena a razlikuju se po položaju na reljefu. Podaci o broju stanovnika ukazuju na izrazito malu populaciju, što je karakteristika gotovo svih naselja grahovske opštine. Stanovnici su se tradicionalno bavili stočarstvom, šumarstvom i malom poljoprivredom, koristeći prirodne resurse dinamičnog kraškog terena. Selo je smješteno na brdsko-planinskom obodu Grahovskog polja, na sunčanim padinama što je tipično za raspored naselja u ovom kraju.",
+    image: generic1,
   },
   {
     name: "Donji Tiškovac",
     description:
-      "Selo poznato po željezničkoj stanici na pruzi Bosanski Novi – Knin.",
+      "Historijsko selo na granici s Hrvatskom, mjesto ustanka 1875. godine.",
     details:
-      "Donji Tiškovac je posebno zanimljivo selo zbog željezničke stanice koja se nalazi na pruzi Bosanski Novi – Knin. Pruga prolazi kroz područje opštine u dužini od oko 1700 metara, a Donji Tiškovac je jedna od ključnih tačaka tog koridora. Selo ima dugu tradiciju vezanu za željeznicu.",
-    image: generic1,
+      "Donji Tiškovac je historijski važno selo u opštini Bosansko Grahovo, smješteno na sjeverozapadnom dijelu opštine, uz granicu s Republikom Hrvatskom. Prema popisu iz 2013. godine, u selu je živjelo 33 stanovnika, isključivo srpske nacionalnosti. Kroz područje ovog sela prolazi historijska željeznička pruga Bosanski Novi–Knin u dužini od 1.700 metara, s tim što se stanica nalazi u obližnjem Bosanskom Drenovcu. Historijsku važnost Donjeg Tiškovca potvrđuje i činjenica da se upravo ovdje, 15. septembra 1875. godine, odvijao jedan od ključnih trenutaka oslobodilačkog ustanka, kada su ustanici uz pomoć braće Plavanjaca zauzeli pograničnu kulu i protjerali osmanske vlasti s ovoga prostora. U blizini sela nalaze se i značajni vodni resursi — izvori koji su prepoznati kao potencijal za vodosnabdijevanje opštine.",
+    image: generic2,
   },
   {
     name: "Duler",
     description:
-      "Malo seosko naselje grahovskog kraja okruženo netaknutom prirodom.",
+      "Selo na zaštićenoj sunčanoj padini s pristupom pašnjacima i šumama.",
     details:
-      "Duler je malo seosko naselje grahovskog kraja, okruženo netaknutom prirodom. Selo je idealno za posjetioce koji traže mir, tišinu i autentično iskustvo života u skladu sa prirodom. Tradicionalna arhitektura kuća svjedoči o bogatoj prošlosti ovog kraja.",
-    image: generic2,
+      "Duler je selo u opštini Bosansko Grahovo, smješteno u okviru karakterističnog dinarskog planinskog krajolik. Kao i većina grahovskih sela, i Duler je osnovan na prirodno povoljnoj lokaciji — na zaštićenoj sunčanoj padini s pristupom pašnjacima i šumama. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, koji su kroz historiju bili osnova privređivanja u cijelom Grahovskom kraju. Selo je asfaltnom putnom mrežom spojen s centrom opštine Bosansko Grahovo, a smješteno je u nizu manjih naselja koja tvore gustu mrežu zajednica raspoređenih po obodima kraških polja i brdskim padinama opštine.",
+    image: generic3,
   },
   {
     name: "Gornje Peulje",
     description:
-      "Naselje na padinama Staretine, sa pogledom na prostrana grahovska polja.",
+      "Gornji dio dvojnog naselja Peulja, na brdskim padinama iznad kraških polja.",
     details:
-      "Gornje Peulje su naselje smješteno na višoj nadmorskoj visini od Donjih Peulja, na padinama planine Staretine. Bogato izvorima pitke vode i okruženo bukovim i hrastovim šumama, mjesto je idealno za planinare i ljubitelje netaknute prirode. Tradicionalna kamena gradnja kuća svjedoči o bogatoj prošlosti ovog kraja.",
-    image: generic3,
+      "Gornje Peulje je naselje u opštini Bosansko Grahovo, gornji dio geografski-administrativne cjeline Peulja, koje zajedno s Donjim Peuljem tvori tipično dvojno dinarsko naselje. Pripada Mjesnoj zajednici Crni Lug. Smješteno je na brdskim padinama iznad kraških polja, okruženo šumom i pašnjacima pogodnim za stočarstvo. Ratna devastacija 1990-ih teško je pogodila i ovo selo, ali su se povratnici postepeno vraćali. Kao i u cijeloj opštini, prirodno okruženje nudi potencijale za razvoj tradicionalnog stočarstva i ekološke poljoprivrede, što ostaje oslonac ekonomskog opstanka povratničkih domaćinstava.",
+    image: generic4,
   },
   {
     name: "Gornji Kazanci",
     description:
-      "Selo na većoj nadmorskoj visini od Donjih Kazanaca, blizu Dinare.",
+      "Selo iznad Donjih Kazanaca na brdskim padinama dinarskog terena.",
     details:
-      "Gornji Kazanci se nalaze na većoj nadmorskoj visini u zapadnom dijelu opštine, u blizini planine Dinare. Selo nudi prelijepe poglede na okolne planinske masive, a okolina je bogata pašnjacima, šumama i krškim fenomenima karakterističnim za ovaj kraj.",
-    image: generic4,
+      "Gornji Kazanci su selo u opštini Bosansko Grahovo, smješteno iznad Donjih Kazanaca na brdskim padinama karakterističnog dinarskog terena. Poput svih grahovskih naselja, smješteno je na sunčanoj i od vjetra zaštićenoj padini, s lakim pristupom pašnjacima i šumskim površinama. Selo administrativno pripada Mjesnoj zajednici Crni Lug. Stanovnici Gornji Kazanaca bavili su se kroz generacije stočarstvom i sitnom poljoprivredom, koristeći bogate livade i pašnjake ovog kraja. Rat 1990-ih donio je teška razaranja, ali se postepeno odvijao povratak u okviru šireg procesa obnove grahovske opštine.",
+    image: generic1,
   },
   {
     name: "Grkovci",
     description:
-      "Tradicionalno selo u kraškoj dolini, poznato po izvorima pitke vode.",
+      "Selo s gradinom starom 3000 godina i pretpostavljenim rimskim Stridonom.",
     details:
-      "Grkovci se nalaze u tipičnoj kraškoj dolini, sa brojnim izvorima pitke vode koji su oduvijek napajali mještane i njihova stada. Selo čuva tradicionalnu arhitekturu sa kamenim kućama i suhozidima koji okružuju imanja. Mještani se i danas bave stočarstvom i čuvaju stare običaje.",
-    image: generic1,
+      "Grkovci su selo s iznimno dugom historijskom tradicijom u opštini Bosansko Grahovo. Prema popisu iz 2013. godine, u selu je živjelo 74 stanovnika, isključivo srpske nacionalnosti. Gradina u okolini Grkovaca osnovana je oko 1.000 godina prije nove ere i bila je neprekidno nastanjena sve do propasti Rimskog carstva u VI vijeku. Na ovom prostoru živjelo je ilirsko pleme Dicioni, koje su tokom rimskog perioda pokorili Rimljani u sklopu supresije ilirsko-panonske bune. Izuzetno važan historijski nalaz su rimski nadgrobni natpisi pronađeni u blizini policijske stanice u Grkovcima tokom 1970-ih godina — ti natpisi potvrđuju intenzivan rimski život u ovom kraju i dali su osnovu za hipotezu da se upravo ovdje nalazio rimski grad Stridon, rodni grad sv. Jeronima. Pored bogate prošlosti, Grkovci su tipično agrarno selo s tradicijom stočarstva i uzgoja kultura prilagođenih klimi dinarskog visočja.",
+    image: generic2,
   },
   {
     name: "Isjek",
     description:
-      "Mirno seosko naselje okruženo šumama, idealno za odmor u prirodi.",
+      "Malo selo obuhvaćeno projektom elektrifikacije povratničkih naselja.",
     details:
-      "Isjek je malo, mirno selo okruženo gustim šumama. Udaljeno od glavnih saobraćajnica, predstavlja oazu mira i tišine. Pogodno je za posjetioce koji traže odmor u netaknutoj prirodi, šetnje šumskim stazama i upoznavanje sa tradicionalnim načinom života.",
-    image: generic2,
+      "Isjek je malo selo u opštini Bosansko Grahovo, smješteno na brdskom terenu karakterističnom za ovaj kraj. Zajedno s Donjim Peuljem i Radlovićima, Isjek je bio obuhvaćen projektom elektrifikacije povratničkih naselja, u sklopu kojeg je izgrađen dalekovod kako bi se omogućio povratak i osnovna infrastruktura za stanovnike koji su se vratili nakon ratnih razaranja 1990-ih. Selo se privredno oslanja na stočarstvo i šumarstvo, a okruženo je pašnjacima i šumskim površinama tipičnim za dinarski planinski pojas. Isjek je putem spojen s centrom opštine i okolnim selima.",
+    image: generic3,
   },
   {
     name: "Jaruga",
     description:
-      "Selo smješteno uz potok, sa očuvanom prirodom i tradicionalnom arhitekturom.",
+      "Naselje MZ Crni Lug u okrilju dinarskih brda i kraških jaruga.",
     details:
-      "Jaruga se nalazi uz istoimeni potok koji prolazi kroz selo i čini ga posebno privlačnim. Mještani su sačuvali tradicionalnu arhitekturu sa kamenim kućama i drvenim mostićima preko potoka. Okolne livade i šume bogate su biljnim i životinjskim svijetom.",
-    image: generic3,
+      "Jaruga je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Naziv sela, koji u bosanskom jeziku opisuje uski, udubini slični teren, vjerovatno govori o geografskom karakteru mjesta — jaruge su karakteristična obilježja kraškog terena u ovom dijelu BiH. Smješteno u okrilju dinarskih brda, selo je okruženo livadama i šumskim kompleksima koji su oduvijek bili osnova privređivanja mještana. Stanovnici su se bavili stočarstvom, a istorijski izvori potvrđuju prisutnost organiziranih zajednica u ovom kraju još od rimskog i predrimskog doba. Jaruga je asfaltnim putem spojena s okolnim selima i središtem opštine Bosansko Grahovo.",
+    image: generic4,
   },
   {
     name: "Kesići",
     description:
-      "Tradicionalno selo grahovskog kraja sa očuvanom seoskom arhitekturom.",
+      "Rodno mjesto Đure Pucara Starog (1899–1979), s prahistorijskom gradinom.",
     details:
-      "Kesići su tradicionalno selo grahovskog kraja koje je sačuvalo autentičnu seosku arhitekturu i način života. Okolne livade, šume i pašnjaci čine ovo mjesto privlačnim za ljubitelje netaknute prirode i seoskog turizma.",
-    image: generic4,
+      "Kesići su selo u opštini Bosansko Grahovo s posebnim historijskim značajem — upravo ovdje, 1899. godine, rodio se Đuro Pucar Stari (1899–1979), istaknuti partijski i politički lider SFRJ, koji je bio predsjednik Bosne i Hercegovine i jedna od ključnih figura antifašističkog pokreta u ovom kraju. Sačuvana je tradicija sjećanja na ovog lokalnog sina buntovne Krajine koji je obilježio povijest cijele regije. Između sela Kesića i Maleševaca, tokom arheoloških istraživanja, pronađena je gradina — utvrđeno prahistorijsko naselje koje potvrđuje kontinuitet životne prisutnosti na ovom prostoru još od davnih vremena. Kao i ostala grahovska sela, i Kesići se odlikuju tipičnim dinarskim krajolikom s livadama, šumama i kraškim formacijama.",
+    image: generic1,
+  },
+  {
+    name: "Korita",
+    description:
+      "Selo u kraškom ambijentu, naziv po geomorfološkim formacijama dinarskog krša.",
+    details:
+      "Korita su selo u opštini Bosansko Grahovo smješteno u karakterističnom kraškom ambijentu ovog dijela jugozapadne Bosne. Naziv \"korita\" referiše na kraška korita — specifične geomorfološke formacije nastale otapanjem vapnenca u dinarskom kršu. Kao i veći dio grahovskih sela, Korita su svjedočila teškim iskušenjima tokom rata 1990-ih, ali su se stanovnici postepeno vraćali i nastavljali s obnavljanjem zajednice. Primarna djelatnost mještana kroz historiju bilo je stočarstvo, uz korišćenje bogatih pašnjaka i livada koji i danas čine dominant znakovlju ovog kraja. Korita su asfaltnom cestom spojena s mrežom puteva koji vode prema centru opštine.",
+    image: generic2,
   },
   {
     name: "Luka",
-    description: "Malo selo na obroncima planina, poznato po pitkim izvorima.",
+    description:
+      "Historijsko selo s grobovima iz ranog bronzanog doba (oko 2300. p.n.e.).",
     details:
-      "Luka je tradicionalno malo selo smješteno na obroncima planina koje okružuju grahovsku kotlinu. Brojni izvori pitke vode su prepoznatljiv simbol ovog mjesta. Mještani njeguju stare zanate i običaje, a selo je odlična polazna tačka za izlete u okolnu prirodu.",
-    image: generic1,
+      "Luka je historijski značajno selo u opštini Bosansko Grahovo, čija historija seže do ranog bronzanog doba. Naime, u blizini sela Luke otkriveni su grobovi koji potiču iz otprilike 2.300 godine p. n. e., što je jedan od najranijih dokaza o organiziranom životu na prostoru Bosanskog Grahova. Ovi nalazi svjedoče o tisućljetnoj kontinuiranoj prisutnosti čovjeka u ovom kraju, koji je zahvaljujući svojoj geografskoj poziciji između planina bio pogodan za organizovani zajednički život. Poput ostalih grahovskih naselja, i Luka se privređivanjem oslanjala na stočarstvo i sitnu poljoprivredu. Smještena u kraškom terenu, okružena je pašnjacima i šumama karakterističnim za dinarski planinski pojas.",
+    image: generic3,
   },
   {
     name: "Maleševci",
     description:
-      "Selo u brdovitom predjelu, sa autentičnim seoskim ambijentom.",
+      "Selo s prahistorijskom gradinom između Maleševaca i Kesića.",
     details:
-      "Maleševci leže u brdovitom predjelu opštine, sa autentičnim seoskim ambijentom koji je odolio modernim promjenama. Stari kameni objekti, suhozidi i tradicionalne staze daju mjestu poseban šarm. Selo je idealno za one koji žele da osjete duh starog grahovskog kraja.",
-    image: generic2,
+      "Maleševci su selo u opštini Bosansko Grahovo, smješteno u tipičnom dinarsko-kraškom krajoliku. U blizini Maleševaca, u prostoru između ovog sela i Kesića, pronađena je prahistorijska gradina — utvrđeno naselje koje potvrđuje kontinuitet ljudskog prisustva na ovom prostoru još iz prethistorijskog doba. Stanovnici Maleševaca bavili su se kroz generacije stočarstvom i poljoprivredom, prilagođavajući svoju privređivačku strategiju tvrdim uvjetima dinarskog visočja. Selo je asfaltnom putnom vezom spojeno s mrežom opštinskih puteva i centrom Bosanskog Grahova.",
+    image: generic4,
   },
   {
     name: "Malo Tičevo",
     description:
-      "Selo na tičevskoj visoravni, dio prolaza prema Glamoču.",
+      "Naselje koje s Velikim Tičevom tvori geografsku i historijsku cjelinu.",
     details:
-      "Malo Tičevo se nalazi na tičevskoj visoravni, na nadmorskoj visini od oko 1098 metara. Visoravan predstavlja prirodni prolaz prema opštini Glamoč i bogata je pašnjacima i šumama. Sa sela se pruža impresivan pogled na okolne planinske masive.",
-    image: generic3,
+      "Malo Tičevo je naselje u opštini Bosansko Grahovo koje zajedno s Velikim Tičevom tvori geografsku i historijsku cjelinu u ovom kraju. Smješteno je u tipičnom dinarskom krajoliku okruženom brdima i šumama. Naziv \"Tičevo\" ima historijsko porijeklo i vezan je uz tradicije ovog kraja. Kao i ostala manja sela opštine, i Malo Tičevo je pretrpjelo teška ratna razaranja 1990-ih, a broj povratnika je ostao skroman. Prirodni potencijali — pašnjaci, šume i čist zrak dinarskog visočja — ostaju vrijednost ovog kraja i osnova za razvoj održive i ekološke privrede.",
+    image: generic1,
   },
   {
     name: "Marinkovci",
-    description: "Naselje u dolini, okruženo livadama i šumama.",
+    description:
+      "Malo seosko naselje nazvano po porodici Marinka, u dinarskim brdima.",
     details:
-      "Marinkovci su smješteni u plodnoj dolini, okruženi prostranim livadama i šumama. Selo je tradicionalno orijentirano na poljoprivredu i stočarstvo. Mirna atmosfera i lijepi prirodni pejzaži privlače posjetioce koji traže predah od gradskog života.",
-    image: generic4,
+      "Marinkovci su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskih brda i kraških polja. Karakteristično po tipu porodičnog prezimena u imenu (Marinkovci — potomci Marinka), što je tipičan model imenovanja sela u ovom kraju, Marinkovci su tipična zaokružena seoska zajednica nastala od proširene porodice ili klana koji su naselili određeno područje. Stanovnici su se bavili tradicionalnom seoskom privredom — stočarstvom, sitnom poljoprivredom i iskorišćavanjem šumskih resursa. Kao i sva grahovska sela, i Marinkovci su asfaltnom cestom povezani s centrom opštine.",
+    image: generic2,
   },
   {
     name: "Mračaj",
     description:
-      "Selo na nadmorskoj visini od oko 400 m, najniža tačka opštine.",
+      "Selo na najnižoj nadmorskoj visini opštine — svega oko 400 metara.",
     details:
-      "Mračaj se nalazi na nadmorskoj visini od oko 400 metara i predstavlja najnižu tačku opštine Bosansko Grahovo. Zbog povoljnog položaja i blaže klime, selo ima karakterističan biljni svijet. Okolina je bogata šumama i potocima, a sam položaj sela ga čini posebno zanimljivim za istraživanje.",
-    image: generic1,
+      "Mračaj je posebno zanimljivo selo u opštini Bosansko Grahovo jer se nalazi na najnižoj nadmorskoj visini u čitavoj opštini — svega oko 400 metara. Ova geografska specifičnost čini Mračaj izuzetnim, jer sva ostala grahovska naselja nalaze se na znatno višim nadmorskim visinama, uobičajeno između 800 i 870 m. Niža nadmorska visina znači i blaži mikroklimat, što je pogodovalo razvoju sela. Mračaj je smješten u dolini ili uvali, zaštićen od vjetra, s pristupom vodotocima — izvori u selu Mračaj prepoznati su kao jedan od značajnijih hidroloških potencijala opštine. Tradicionalna privreda sela bila je stočarstvo i poljoprivreda, uz korišćenje povoljnijeg klimatskog položaja u odnosu na viša sela.",
+    image: generic3,
   },
   {
     name: "Mramorje",
     description:
-      "Naselje grahovskog kraja sa očuvanom prirodom i tradicijom.",
+      "Naselje s mramornim stećcima i ostacima antičkog kultnog mjesta.",
     details:
-      "Mramorje je naselje grahovskog kraja koje čuva bogatstvo prirode i kulturnog nasljeđa. Okolne šume i livade pružaju idealne uslove za stočarstvo, a mještani njeguju tradicionalan način života koji je očuvan kroz generacije.",
-    image: generic2,
+      "Mramorje je naselje u opštini Bosansko Grahovo s izraženim historijskim i arheološkim nasljeđem. Naziv \"Mramorje\" direktno upućuje na mramorne stećke — monumentalne nadgrobne kamene ploče bosanskih krstjana iz srednjovjekovnog perioda. Na lokalitetu Mramorje pronađeni su stećci, kao i ostaci antičkog kultnog mjesta: pronađena je ara posvećena rimskom božanstvu Silvanu Messoru, kao i dijelovi crkvenog namještaja iz kasne antike. Ova otkrića svjedoče o dugom kontinuitetu sacralnog i kulturnog života na ovom lokalitetu, od antike do bosanskog středovjekovlja. Mramorje je smješteno uz put Livno–Grahovo i pruža izuzetan kulturno-historijski potencijal za razvitak turizma u opštini.",
+    image: generic4,
   },
   {
     name: "Nuglašica",
-    description: "Tradicionalno selo grahovskog kraja, sa bogatom prirodom.",
+    description:
+      "Selo s prirodnim Nuglašičkim jezerom u Livanjskom polju.",
     details:
-      "Nuglašica je tradicionalno selo grahovskog kraja koje čuva bogatstvo prirode i kulturnog nasljeđa. Okolne šume, livade i izvori vode čine ovo mjesto privlačnim za sve ljubitelje seoskog turizma i tradicionalnog načina života.",
-    image: generic3,
+      "Nuglašica je selo u opštini Bosansko Grahovo, smješteno u zoni Livanjskog polja koje pripada grahovskoj opštini. U blizini sela nalazi se Nuglašičko jezero — prirodno jezero u Livanjskom polju, jedno od tri prirodna jezera na prostoru opštine (uz Šatorsko jezero i Pečenačko jezero). Nuglašičko jezero prepoznato je kao potencijalni resurs za razvoj ribarstva i eko-turizma u opštini. Administrativno, Nuglašica pripada Mjesnoj zajednici Crni Lug. Tradicionalna privreda sela temeljila se na stočarstvu i korišćenju bogatih pašnjaka Livanjskog polja, koji su od davnina bili izuzetno pogodni za uzgoj stoke i ovaca.",
+    image: generic1,
   },
   {
     name: "Pečenci",
     description:
-      "Mirno seosko naselje okruženo livadama i šumama grahovskog kraja.",
+      "Selo uz Pečenačko jezero, jedno od tri prirodna jezera u opštini.",
     details:
-      "Pečenci su mirno seosko naselje grahovskog kraja, okruženo prostranim livadama i šumama. Selo je idealno za posjetioce koji traže mir, tišinu i predah u krilu prirode. Tradicionalni način života i očuvana arhitektura čine ga posebno privlačnim.",
-    image: generic4,
+      "Pečenci su selo u opštini Bosansko Grahovo smješteno u okrilju kraških polja i dinarskog planinskog terena. U blizini sela nalazi se Pečenačko jezero — prirodno jezero u Grahovskom polju, jedno od tri prirodna jezera na prostoru opštine, pored Šatorskog i Nuglašičkog. Ovo jezero ima potencijal za razvoj ribarstva i rekreativnog turizma. Kao i ostala grahovska sela, i Pečenci imaju dugu tradicionalnu privredu utemeljenu na stočarstvu i korišćenju bogatih pašnjaka koji okružuju Grahovsko polje. Selo je asfaltnom cestom spojen s centrom opštine.",
+    image: generic2,
   },
   {
     name: "Pržine",
     description:
-      "Selo grahovskog kraja okruženo pašnjacima i šumama.",
+      "Selo sa stećcima Dobrih Bošnjana iz 12. vijeka i bivšim rasadnikom drveća.",
     details:
-      "Pržine su selo grahovskog kraja okruženo prostranim pašnjacima i šumama. Mještani se tradicionalno bave stočarstvom, a okolni krški pejzaž daje selu jedinstven karakter. Mirno okruženje čini ga privlačnim za sve koji žele da iskuse autentični seoski život.",
-    image: generic1,
+      "Pržine su historijski i kulturno značajno selo u opštini Bosansko Grahovo. U selu i njegovoj okolini sačuvani su stećci \"Dobrih Bošnjana\" — monumentalni nadgrobni kameni blokovi koji potiču iz 12. vijeka i svjedoče o prisutnosti bosanskih krstjana (Crkve bosanske) na ovom prostoru u periodu bosanskog srednjovjekovlja. Ovi stećci, osim historijskog, imaju i izuzetnu estetsku i kulturnu vrijednost, kao dio fenomena koji je u cijelosti upisan na UNESCO-ovu Listu svjetske baštine. U selu Pržine zabilježen je i rasadnik za uzgoj sadnica četinarskog i lišćarskog drveća — Rasadnik Pržine — koji je do ratnih razaranja zapošljavao oko 120 radnika i predstavljao važan ekonomski subjekt opštine. U neposrednoj blizini sela, Separacija Pržine bavila se eksploatacijom šljunka i pijeska, što ostaje jedna od aktivnijih privrednih aktivnosti u opštini. Pržine su smještene u kraškom terenu s pristupom kvalitetnim pašnjacima i šumama.",
+    image: generic3,
   },
   {
     name: "Radlovići",
     description:
-      "Mirno seosko naselje sa očuvanim tradicionalnim načinom života.",
+      "Malo seosko naselje patronimskog porijekla, obnovljeno nakon rata 1990-ih.",
     details:
-      "Radlovići su mirno seosko naselje gdje je tradicionalni način života ostao gotovo netaknut. Posjetioci mogu da iskuse autentičnu seosku svakodnevicu, probaju domaće proizvode i upoznaju se sa starim zanatima koje mještani njeguju kroz generacije.",
-    image: generic2,
+      "Radlovići su malo seosko naselje u opštini Bosansko Grahovo, smješteno na brdovitom terenu karakterističnom za dinarski krajobraz ovog područja. Naziv sela, poput mnogih u ovom kraju, potiče od patronimske tradicije — Radlovići su potomci Radla ili Radoja, što svjedoči o staroj porodičnoj tradiciji zajednice. Zajedno s Donjim Peuljem i Isjekom, Radlovići su bili obuhvaćeni projektom elektrifikacije povratničkih naselja (izgradnja dalekovoda), što svjedoči o naporima obnove zajednice nakon rata 1990-ih. Tradicija sela vezana je uz stočarstvo, uzgoj stoke na bogatim pašnjacima okolnih brda i livada, te korišćenje šumskih resursa.",
+    image: generic4,
   },
   {
     name: "Ugarci",
-    description: "Naselje u dolini, okruženo planinama i šumama.",
+    description:
+      "Selo u dinarskom kraškom terenu, okruženo pašnjacima i šumama.",
     details:
-      "Ugarci su naselje smješteno u dolini, okruženo visokim planinama i gustim šumama. Mirna i zaštićena lokacija čini selo idealnim za odmor i rekreaciju. Tradicionalna gradnja i očuvana priroda daju Ugarcima poseban karakter.",
-    image: generic3,
+      "Ugarci su selo u opštini Bosansko Grahovo, smješteno u okrilju dinarskog kraškog terena. Naziv \"Ugarci\" vjerovatno dolazi od staroslavenskog \"ugar\" — neobrađena ili neiskorišćena zemlja, što može upućivati na historijske uvjete prvog nastanjivanja ovog prostora. Kao i sva grahovska sela, i Ugarci su okruženi pašnjacima i šumama koje su kroz historiju bile osnova privređivanja — pretežno stočarstvo i korišćenje šumskih resursa. Ratna razaranja 1990-ih teško su pogodila i ovo selo, no programi obnove i podrška povratnicima doprinijeli su postupnoj obnovi zajednice.",
+    image: generic1,
+  },
+  {
+    name: "Uništa",
+    description:
+      "Tipično dinarsko planinsko selo okruženo pašnjacima, livadama i šumama.",
+    details:
+      "Uništa su naselje u opštini Bosansko Grahovo, administrativno smješteno u okviru teritorije ove jugozapadne bosanske opštine. Ime sela, premda na prvi pogled asocira na uništenje, vjerovatno ima predosmansko ili slavensko porijeklo i može biti vezano uz neki stariji apelativ ili lično ime. Uništa su tipično dinarsko planinskogorsko selo, okruženo pašnjacima, livadama i šumskim kompleksima. Kroz historiju stanovnici su se bavili stočarstvom i sitnom poljoprivredom. Kao i ostatak grahovske opštine, i Uništa su bila poprište teških ratnih sukoba 1990-ih, a obnova zajednice odvijala se postepeno kroz naredne decenije.",
+    image: generic2,
   },
   {
     name: "Varoš",
     description:
-      "Naselje grahovskog kraja sa bogatom istorijom i tradicijom.",
+      "Manje naselje s historijskim korijenima u urbanijoj funkciji ovog prostora.",
     details:
-      "Varoš je naselje grahovskog kraja sa bogatom istorijom i tradicijom. Smješteno u prirodnom ambijentu, čuva autentični duh ovog dijela Bosne. Mještani se bave tradicionalnim djelatnostima, a okolina pruža brojne mogućnosti za istraživanje.",
-    image: generic4,
+      "Varoš je naziv koji u bosanskom i srpskom jeziku historijski označava gradski, varoški dio naselja — zapravo mali gradić ili trg s razvijenom tržišnom funkcijom. U kontekstu opštine Bosansko Grahovo, Varoš je manje naselje s historijskim korijenima u urbanijoj funkciji ovog prostora. Grahovska Varoš bila je dio šire mreže naselja u Grahovskom polju, a njena historija isprepletena je s historijom cjelokupnog grahovskog kraja — od rimskog doba, kroz osmanski period, Austro-Ugarsku, pa do modernog doba. Danas Varoš ostaje malo, mirno naselje u sklopu opštine, okruženo kraški oblovanim brdima i zelenim pašnjacima.",
+    image: generic3,
   },
   {
     name: "Veliko Tičevo",
     description:
-      "Veće naselje na tičevskoj visoravni, prolaz prema Glamoču.",
+      "Veće od dva istoimena Tičeva, u karakterističnom dinarskom krajoliku.",
     details:
-      "Veliko Tičevo se nalazi na tičevskoj visoravni, na nadmorskoj visini od 1098 metara, i predstavlja veće naselje ovog dijela opštine. Visoravan je važan prirodni prolaz prema opštini Glamoč. Bogata pašnjacima i šumama, ovo područje je takođe značajna saobraćajna tačka grahovskog kraja.",
-    image: generic1,
+      "Veliko Tičevo je veće od dva istoimena Tičeva u opštini Bosansko Grahovo i zajedno s Malim Tičevom tvori geografsku cjelinu. Smješteno je u karakterističnom dinarskom krajoliku, okruženo brdima, livadama i šumama. Ime \"Tičevo\" ima historijsko porijeklo koje je zabilježeno u topografiji ovog kraja. Kao i ostala grahovska sela, i Veliko Tičevo je pretrpjelo teška razaranja u ratu 1990-ih, ali se zajednica postepeno obnavljala. Okolni pašnjaci i šumska bogatstva nude potencijale za razvoj ekološke i tradicionalne stočarske privrede, što je i historijska osnova privređivanja ovog kraja.",
+    image: generic4,
   },
   {
     name: "Vidovići",
     description:
-      "Selo na padinama planine, sa pogledom na okolna polja.",
+      "Selo patronimskog porijekla u kraškom dinarskom terenu.",
     details:
-      "Vidovići su smješteni na padinama planine, sa kojih se pruža prelijep pogled na okolna grahovska polja. Selo je dobilo ime po porodici Vidović, a tradicionalna kamena arhitektura kuća svjedoči o bogatoj prošlosti ovog mjesta.",
-    image: generic2,
+      "Vidovići su selo u opštini Bosansko Grahovo, čiji naziv potiče od prezimena Vidović — što je patronimska tradicija imenovanja sela tipična za ovaj dio BiH. Smješteno u kraškom dinarskom terenu, okruženo brdima i livadama, Vidovići su kroz historiju bili tipično agrarno-stočarsko selo. Kraj poznate grahovske tradicije stočarstva, koji je oduvijek bio osnova privređivanja u ovom krajoliku bogatom pašnjacima, i Vidovići su bili sastavni dio te privredne logike. Ratna razaranja 1990-ih pogodila su i ovo selo, no povratak i obnova odvijali su se u sklopu opšteg procesa obnove grahovske opštine. Selo je putnom mrežom opštine spojen s Bosanskim Grahovom.",
+    image: generic1,
   },
   {
     name: "Zaseok",
     description:
-      "Malo naselje grahovskog kraja okruženo netaknutom prirodom.",
+      "Malo seosko naselje — \"zaseok\" označava grupu kuća izvan glavnog jezgra.",
     details:
-      "Zaseok je malo naselje grahovskog kraja okruženo netaknutom prirodom. Mirna lokacija, čisti zrak i blizina šuma čine ga idealnim za odmor i rekreaciju. Tradicionalni način života mještana čuva autentični duh ovog dijela Bosne.",
-    image: generic3,
+      "Zaseok je malo seosko naselje u opštini Bosansko Grahovo. Sam naziv \"zaseok\" je i apelativ koji u južnoslavenskim jezicima označava manji zaselak ili dio sela — zasebno smještenu grupu kuća izvan glavnog seoskog jezgra. Ovo govori o historijskom načinu organiziranja seoskog prostora u ovom kraju, gdje su se porodice i klanovi nastanjivali u odvojenim grupama kuća na brdskim padinama i uvala. Kao i ostala manja naselja opštine, Zaseok je okružen tipičnim dinarskim pejzažem — pašnjacima, šumama i kraškim formacijama — a privreda se temeljila na stočarstvu i korišćenju prirodnih resursa.",
+    image: generic2,
   },
   {
     name: "Zebe",
     description:
-      "Tradicionalno selo grahovskog kraja sa očuvanom prirodom.",
+      "Malo seosko naselje agrarno-stočarskog karaktera u dinarskom planinskom krajoliku.",
     details:
-      "Zebe su tradicionalno selo grahovskog kraja sa očuvanom prirodom i tradicijom. Okolni pašnjaci, šume i izvori vode čine ovo mjesto privlačnim za ljubitelje seoskog turizma. Mještani njeguju stare običaje i tradicionalne djelatnosti.",
+      "Zebe su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskog planinskog krajolik karakterističnog za ovaj kraj. Okruženo brdima i livadama, Zebe su tipično agrarno-stočarsko selo u sklopu sistema grahovskih sela raspoređenih po obodima kraških polja i brdskim padinama. Historija sela uklapa se u širu historiju grahovskog kraja — od prahistorijskog i rimskog naslijeđa, kroz srednji vijek i osmanski period, do modernog doba. Stanovnici su se bavili stočarstvom i sitnom poljoprivredom, a prirodno okruženje nudi potencijale za razvoj ekološkog turizma i ruralnog razvoja. Zebe su putnom mrežom opštine spojen s centrom Bosanskog Grahova.",
     image: generic4,
   },
 ];
