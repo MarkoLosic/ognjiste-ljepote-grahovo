@@ -215,7 +215,7 @@ const otherVillages: Village[] = [
     description:
       "Malo seosko naselje patronimskog porijekla, obnovljeno nakon rata 1990-ih.",
     details:
-      "Radlovići su malo seosko naselje u opštini Bosansko Grahovo, smješteno na brdovitom terenu karakterističnom za dinarski krajobraz ovog područja. Naziv sela, poput mnogih u ovom kraju, potiče od patronimske tradicije — Radlovići su potomci Radla ili Radoja, što svjedoči o staroj porodičnoj tradiciji zajednice. Zajedno s Donjim Peuljem i Isjekom, Radlovići su bili obuhvaćeni projektom elektrifikacije povratničkih naselja (izgradnja dalekovoda), što svjedoči o naporima obnove zajednice nakon rata 1990-ih. Tradicija sela vezana je uz stočarstvo, uzgoj stoke na bogatim pašnjacima okolnih brda i livada, te korišćenje šumskih resursa.",
+      "Radlovići su malo seosko naselje u opštini Bosansko Grahovo, smješteno na brdovitom terenu karakterističnom za dinarski pejzaž ovog područja. Naziv sela, poput mnogih u ovom kraju, potiče od patronimske tradicije — Radlovići su potomci Radla ili Radoja, što svjedoči o staroj porodičnoj tradiciji zajednice. Zajedno sa Donjim Peuljem i Isjekom, Radlovići su bili obuhvaćeni projektom elektrifikacije povratničkih naselja (izgradnja dalekovoda), što svjedoči o naporima obnove zajednice nakon rata 1990-ih. Tradicija sela vezana je za stočarstvo, uzgoj stoke na bogatim pašnjacima okolnih brda i livada, te korišćenje šumskih resursa.",
     image: generic4,
   },
   {
@@ -223,7 +223,7 @@ const otherVillages: Village[] = [
     description:
       "Selo u dinarskom kraškom terenu, okruženo pašnjacima i šumama.",
     details:
-      "Ugarci su selo u opštini Bosansko Grahovo, smješteno u okrilju dinarskog kraškog terena. Naziv \"Ugarci\" vjerovatno dolazi od staroslavenskog \"ugar\" — neobrađena ili neiskorišćena zemlja, što može upućivati na historijske uvjete prvog nastanjivanja ovog prostora. Kao i sva grahovska sela, i Ugarci su okruženi pašnjacima i šumama koje su kroz historiju bile osnova privređivanja — pretežno stočarstvo i korišćenje šumskih resursa. Ratna razaranja 1990-ih teško su pogodila i ovo selo, no programi obnove i podrška povratnicima doprinijeli su postupnoj obnovi zajednice.",
+      "Ugarci su selo u opštini Bosansko Grahovo, smješteno u okrilju dinarskog kraškog terena. Naziv \"Ugarci\" vjerovatno dolazi od staroslovenskog \"ugar\" — neobrađena ili neiskorišćena zemlja, što može upućivati na istorijske uslove prvog nastanjivanja ovog prostora. Kao i sva grahovska sela, i Ugarci su okruženi pašnjacima i šumama koje su kroz istoriju bile osnova privređivanja — pretežno stočarstvo i korišćenje šumskih resursa. Ratna razaranja 1990-ih teško su pogodila i ovo selo, no programi obnove i podrška povratnicima doprinijeli su postupnoj obnovi zajednice.",
     image: generic1,
   },
   {
