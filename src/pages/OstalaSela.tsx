@@ -245,9 +245,9 @@ const otherVillages: Village[] = [
   {
     name: "Veliko Tičevo",
     description:
-      "Veće od dva istoimena Tičeva, u karakterističnom dinarskom krajoliku.",
+      "Veće od dva istoimena Tičeva, u karakterističnom dinarskom pejzažu.",
     details:
-      "Veliko Tičevo je veće od dva istoimena Tičeva u opštini Bosansko Grahovo i zajedno s Malim Tičevom tvori geografsku cjelinu. Smješteno je u karakterističnom dinarskom krajoliku, okruženo brdima, livadama i šumama. Ime \"Tičevo\" ima historijsko porijeklo koje je zabilježeno u topografiji ovog kraja. Kao i ostala grahovska sela, i Veliko Tičevo je pretrpjelo teška razaranja u ratu 1990-ih, ali se zajednica postepeno obnavljala. Okolni pašnjaci i šumska bogatstva nude potencijale za razvoj ekološke i tradicionalne stočarske privrede, što je i historijska osnova privređivanja ovog kraja.",
+      "Veliko Tičevo je veće od dva istoimena Tičeva u opštini Bosansko Grahovo i zajedno sa Malim Tičevom tvori geografsku cjelinu. Smješteno je u karakterističnom dinarskom pejzažu, okruženo brdima, livadama i šumama. Ime \"Tičevo\" ima istorijsko porijeklo koje je zabilježeno u toponimiji ovog kraja. Kao i ostala grahovska sela, i Veliko Tičevo je pretrpjelo teška razaranja u ratu 1990-ih, ali se zajednica postepeno obnavljala. Okolni pašnjaci i šumska bogatstva nude potencijale za razvoj ekološke i tradicionalne stočarske privrede, što je i istorijska osnova privređivanja ovog kraja.",
     image: generic4,
   },
   {
@@ -255,7 +255,7 @@ const otherVillages: Village[] = [
     description:
       "Selo patronimskog porijekla u kraškom dinarskom terenu.",
     details:
-      "Vidovići su selo u opštini Bosansko Grahovo, čiji naziv potiče od prezimena Vidović — što je patronimska tradicija imenovanja sela tipična za ovaj dio BiH. Smješteno u kraškom dinarskom terenu, okruženo brdima i livadama, Vidovići su kroz historiju bili tipično agrarno-stočarsko selo. Kraj poznate grahovske tradicije stočarstva, koji je oduvijek bio osnova privređivanja u ovom krajoliku bogatom pašnjacima, i Vidovići su bili sastavni dio te privredne logike. Ratna razaranja 1990-ih pogodila su i ovo selo, no povratak i obnova odvijali su se u sklopu opšteg procesa obnove grahovske opštine. Selo je putnom mrežom opštine spojen s Bosanskim Grahovom.",
+      "Vidovići su selo u opštini Bosansko Grahovo, čiji naziv potiče od prezimena Vidović — što je patronimska tradicija imenovanja sela tipična za ovaj dio BiH. Smješteno u kraškom dinarskom terenu, okruženo brdima i livadama, Vidovići su kroz istoriju bili tipično agrarno-stočarsko selo. Pored poznate grahovske tradicije stočarstva, koja je oduvijek bila osnova privređivanja u ovom kraju bogatom pašnjacima, i Vidovići su bili sastavni dio te privredne logike. Ratna razaranja 1990-ih pogodila su i ovo selo, no povratak i obnova odvijali su se u sklopu opšteg procesa obnove grahovske opštine. Selo je putnom mrežom opštine spojeno sa Bosanskim Grahovom.",
     image: generic1,
   },
   {
