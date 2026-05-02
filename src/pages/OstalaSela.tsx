@@ -181,15 +181,15 @@ const otherVillages: Village[] = [
   {
     name: "Mramorje",
     description:
-      "Naselje s mramornim stećcima i ostacima antičkog kultnog mjesta.",
+      "Naselje sa mramornim stećcima i ostacima antičkog kultnog mjesta.",
     details:
-      "Mramorje je naselje u opštini Bosansko Grahovo s izraženim historijskim i arheološkim nasljeđem. Naziv \"Mramorje\" direktno upućuje na mramorne stećke — monumentalne nadgrobne kamene ploče bosanskih krstjana iz srednjovjekovnog perioda. Na lokalitetu Mramorje pronađeni su stećci, kao i ostaci antičkog kultnog mjesta: pronađena je ara posvećena rimskom božanstvu Silvanu Messoru, kao i dijelovi crkvenog namještaja iz kasne antike. Ova otkrića svjedoče o dugom kontinuitetu sacralnog i kulturnog života na ovom lokalitetu, od antike do bosanskog středovjekovlja. Mramorje je smješteno uz put Livno–Grahovo i pruža izuzetan kulturno-historijski potencijal za razvitak turizma u opštini.",
+      "Mramorje je naselje u opštini Bosansko Grahovo sa izraženim istorijskim i arheološkim nasljeđem. Naziv \"Mramorje\" direktno upućuje na mramorne stećke — monumentalne nadgrobne kamene ploče bosanskih krstjana iz srednjovjekovnog perioda. Na lokalitetu Mramorje pronađeni su stećci, kao i ostaci antičkog kultnog mjesta: pronađena je ara posvećena rimskom božanstvu Silvanu Mesoru, kao i dijelovi crkvenog namještaja iz kasne antike. Ova otkrića svjedoče o dugom kontinuitetu sakralnog i kulturnog života na ovom lokalitetu, od antike do bosanskog srednjovjekovlja. Mramorje je smješteno uz put Livno–Grahovo i pruža izuzetan kulturno-istorijski potencijal za razvoj turizma u opštini.",
     image: generic4,
   },
   {
     name: "Nuglašica",
     description:
-      "Selo s prirodnim Nuglašičkim jezerom u Livanjskom polju.",
+      "Selo sa prirodnim Nuglašičkim jezerom u Livanjskom polju.",
     details:
       "Nuglašica je selo u opštini Bosansko Grahovo, smješteno u zoni Livanjskog polja koje pripada grahovskoj opštini. U blizini sela nalazi se Nuglašičko jezero — prirodno jezero u Livanjskom polju, jedno od tri prirodna jezera na prostoru opštine (uz Šatorsko jezero i Pečenačko jezero). Nuglašičko jezero prepoznato je kao potencijalni resurs za razvoj ribarstva i eko-turizma u opštini. Administrativno, Nuglašica pripada Mjesnoj zajednici Crni Lug. Tradicionalna privreda sela temeljila se na stočarstvu i korišćenju bogatih pašnjaka Livanjskog polja, koji su od davnina bili izuzetno pogodni za uzgoj stoke i ovaca.",
     image: generic1,
