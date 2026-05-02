@@ -29,9 +29,9 @@ const otherVillages: Village[] = [
   {
     name: "Bastasi",
     description:
-      "Malo selo s historijskim rudnikom boksita iz doba kralja Tvrtka I Kotromanića.",
+      "Malo selo sa istorijskim rudnikom boksita iz doba kralja Tvrtka I Kotromanića.",
     details:
-      "Bastasi su malo selo smješteno u opštini Bosansko Grahovo, na nadmorskoj visini tipičnoj za dinarski krški reljef ovog područja. Prema popisu stanovništva iz 2013. godine, u selu je živjelo 20 stanovnika, isključivo srpske nacionalnosti. Iako malo po veličini, Bastasi su zanimljivi s historijskog aspekta — u ovom kraju potvrđeno je postojanje starog rudnika boksita koji je, prema historijskim pretpostavkama, bio otvoren još u doba vladavine bosanskog kralja Tvrtka I Kotromanića, u periodu bosanskog kraljevstva. U blizini Bastasa, u susjednoj opštini Drvar, nalazi se i poznati hidrološki fenomen — kraška vrela Bastašica, s kojim je ponorski sistem Resanovačkih pećina povezan podzemnim vodotocima. Prema istraživanjima iz 1969. godine, utvrđena je veza između ponora Struge i Bastašice bojenjem vode, pri čemu pravolinijska udaljenost iznosi 11 km. Selo je asfaltnim putem povezano s centrom opštine Bosansko Grahovo.",
+      "Bastasi su malo selo smješteno u opštini Bosansko Grahovo, na nadmorskoj visini tipičnoj za dinarski kraški reljef ovog područja. Prema popisu stanovništva iz 2013. godine, u selu je živjelo 20 stanovnika, isključivo srpske nacionalnosti. Iako malo po veličini, Bastasi su zanimljivi sa istorijskog aspekta — u ovom kraju potvrđeno je postojanje starog rudnika boksita koji je, prema istorijskim pretpostavkama, bio otvoren još u doba vladavine bosanskog kralja Tvrtka I Kotromanića, u periodu bosanskog kraljevstva. U blizini Bastasa, u susjednoj opštini Drvar, nalazi se i poznati hidrološki fenomen — kraško vrelo Bastašica, sa kojim je ponorski sistem Resanovačkih pećina povezan podzemnim vodotocima. Prema istraživanjima iz 1969. godine, utvrđena je veza između ponora Struge i Bastašice bojenjem vode, pri čemu pravolinijska udaljenost iznosi 11 km. Selo je asfaltnim putem povezano sa centrom opštine Bosansko Grahovo.",
     image: generic1,
   },
   {
