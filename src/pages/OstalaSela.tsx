@@ -39,7 +39,7 @@ const otherVillages: Village[] = [
     description:
       "Selo u karakterističnom kraškom ambijentu zapadne Bosne, oslonjeno na stočarstvo i šumarstvo.",
     details:
-      "Crnac je selo u opštini Bosansko Grahovo koje se smjestilo u karakterističnom kraškom ambijentu zapadne Bosne. Kao i većina grahovskih naselja, i Crnac se nalazi na obodima kraških polja, zaštićen od vjetra i nepogoda brdskim padinama koje prirodno okružuju Grahovsko polje. Selo pripada karakterističnom dinarskogorskom krajoliku ovoga dijela BiH, u koji se smjenjuju pašnjaci, livade i šumska bogatstva. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, što ostaje i danas jedan od rijetkih privrednih potencijala ovog kraja. Crnac je, poput ostalih sela opštine, asfaltnom putnom mrežom spojen s centrom opštine.",
+      "Crnac je selo u opštini Bosansko Grahovo koje se smjestilo u karakterističnom kraškom ambijentu zapadne Bosne. Kao i većina grahovskih naselja, i Crnac se nalazi na obodima kraških polja, zaštićen od vjetra i nepogoda brdskim padinama koje prirodno okružuju Grahovsko polje. Selo pripada karakterističnom dinarsko-planinskom pejzažu ovog dijela BiH, u kojem se smjenjuju pašnjaci, livade i šumska bogatstva. Stanovnici su se tradicionalno bavili stočarstvom i šumarstvom, što ostaje i danas jedan od rijetkih privrednih potencijala ovog kraja. Crnac je, poput ostalih sela opštine, asfaltnom putnom mrežom spojen sa centrom opštine.",
     image: generic2,
   },
   {
@@ -47,7 +47,7 @@ const otherVillages: Village[] = [
     description:
       "Sjedište Mjesne zajednice koja obuhvata veći broj okolnih naselja grahovskog kraja.",
     details:
-      "Crni Lug je selo u opštini Bosansko Grahovo s dugom historijskom tradicijom na ovome prostoru. Administrativno je bilo dio Kotara Bosanskog Grahova i tokom Drugog svjetskog rata. Crni Lug je sjedište Mjesne zajednice koja obuhvata veći broj okolnih naselja — Gornje i Donje Peulje, Gornji i Donji Kazanci, Nuglašicu, Bastase, Jarugi, Pržine i Grkovce. Pored sela protječe kraški vodotok, a okolina obiluje livadama i šumama bukve i jele karakterističnim za dinarski planinski pojas. Prema evidencijama o povratku, u MZ Crni Lug nakon rata je ukupno povratilo oko 730 lica. U selu je zabilježeno historijsko prisustvo još od prvih doseljavanja Slavena u ovaj kraj, a u blizini su otkriveni i ostaci iz rimskog perioda. Crni Lug je asfaltnim putem dobro spojen s ostalim naseljima opštine i njenim sjedištem.",
+      "Crni Lug je selo u opštini Bosansko Grahovo sa dugom istorijskom tradicijom na ovom prostoru. Administrativno je bio dio Sreza Bosanskog Grahova i tokom Drugog svjetskog rata. Crni Lug je sjedište Mjesne zajednice koja obuhvata veći broj okolnih naselja — Gornje i Donje Peulje, Gornje i Donje Kazance, Nuglašicu, Bastase, Jarugu, Pržine i Grkovce. Pored sela protiče kraški vodotok, a okolina obiluje livadama i šumama bukve i jele karakterističnim za dinarski planinski pojas. Prema evidencijama o povratku, u MZ Crni Lug nakon rata se ukupno vratilo oko 730 lica. U selu je zabilježeno istorijsko prisustvo još od prvih doseljavanja Slovena u ovaj kraj, a u blizini su otkriveni i ostaci iz rimskog perioda. Crni Lug je asfaltnim putem dobro spojen sa ostalim naseljima opštine i njenim sjedištem.",
     image: generic3,
   },
   {
