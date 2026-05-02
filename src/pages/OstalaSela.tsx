@@ -263,15 +263,15 @@ const otherVillages: Village[] = [
     description:
       "Malo seosko naselje — \"zaseok\" označava grupu kuća izvan glavnog jezgra.",
     details:
-      "Zaseok je malo seosko naselje u opštini Bosansko Grahovo. Sam naziv \"zaseok\" je i apelativ koji u južnoslavenskim jezicima označava manji zaselak ili dio sela — zasebno smještenu grupu kuća izvan glavnog seoskog jezgra. Ovo govori o historijskom načinu organiziranja seoskog prostora u ovom kraju, gdje su se porodice i klanovi nastanjivali u odvojenim grupama kuća na brdskim padinama i uvala. Kao i ostala manja naselja opštine, Zaseok je okružen tipičnim dinarskim pejzažem — pašnjacima, šumama i kraškim formacijama — a privreda se temeljila na stočarstvu i korišćenju prirodnih resursa.",
+      "Zaseok je malo seosko naselje u opštini Bosansko Grahovo. Sam naziv \"zaseok\" je i apelativ koji u južnoslovenskim jezicima označava manji zaselak ili dio sela — zasebno smještenu grupu kuća izvan glavnog seoskog jezgra. Ovo govori o istorijskom načinu organizovanja seoskog prostora u ovom kraju, gdje su se porodice i rodovi nastanjivali u odvojenim grupama kuća na brdskim padinama i u uvalama. Kao i ostala manja naselja opštine, Zaseok je okružen tipičnim dinarskim pejzažem — pašnjacima, šumama i kraškim formacijama — a privreda se temeljila na stočarstvu i korišćenju prirodnih resursa.",
     image: generic2,
   },
   {
     name: "Zebe",
     description:
-      "Malo seosko naselje agrarno-stočarskog karaktera u dinarskom planinskom krajoliku.",
+      "Malo seosko naselje agrarno-stočarskog karaktera u dinarskom planinskom pejzažu.",
     details:
-      "Zebe su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskog planinskog krajolik karakterističnog za ovaj kraj. Okruženo brdima i livadama, Zebe su tipično agrarno-stočarsko selo u sklopu sistema grahovskih sela raspoređenih po obodima kraških polja i brdskim padinama. Historija sela uklapa se u širu historiju grahovskog kraja — od prahistorijskog i rimskog naslijeđa, kroz srednji vijek i osmanski period, do modernog doba. Stanovnici su se bavili stočarstvom i sitnom poljoprivredom, a prirodno okruženje nudi potencijale za razvoj ekološkog turizma i ruralnog razvoja. Zebe su putnom mrežom opštine spojen s centrom Bosanskog Grahova.",
+      "Zebe su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskog planinskog pejzaža karakterističnog za ovaj kraj. Okruženo brdima i livadama, Zebe su tipično agrarno-stočarsko selo u sklopu sistema grahovskih sela raspoređenih po obodima kraških polja i brdskim padinama. Istorija sela uklapa se u širu istoriju grahovskog kraja — od praistorijskog i rimskog nasljeđa, kroz srednji vijek i osmanski period, do modernog doba. Stanovnici su se bavili stočarstvom i sitnom poljoprivredom, a prirodno okruženje nudi potencijale za razvoj ekološkog turizma i ruralnog razvoja. Zebe su putnom mrežom opštine spojene sa centrom Bosanskog Grahova.",
     image: generic4,
   },
 ];
