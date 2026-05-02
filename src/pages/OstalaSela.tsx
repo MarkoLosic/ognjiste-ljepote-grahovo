@@ -231,15 +231,15 @@ const otherVillages: Village[] = [
     description:
       "Tipično dinarsko planinsko selo okruženo pašnjacima, livadama i šumama.",
     details:
-      "Uništa su naselje u opštini Bosansko Grahovo, administrativno smješteno u okviru teritorije ove jugozapadne bosanske opštine. Ime sela, premda na prvi pogled asocira na uništenje, vjerovatno ima predosmansko ili slavensko porijeklo i može biti vezano uz neki stariji apelativ ili lično ime. Uništa su tipično dinarsko planinskogorsko selo, okruženo pašnjacima, livadama i šumskim kompleksima. Kroz historiju stanovnici su se bavili stočarstvom i sitnom poljoprivredom. Kao i ostatak grahovske opštine, i Uništa su bila poprište teških ratnih sukoba 1990-ih, a obnova zajednice odvijala se postepeno kroz naredne decenije.",
+      "Uništa su naselje u opštini Bosansko Grahovo, administrativno smješteno u okviru teritorije ove jugozapadne bosanske opštine. Ime sela, premda na prvi pogled asocira na uništenje, vjerovatno ima predosmansko ili slovensko porijeklo i može biti vezano za neki stariji apelativ ili lično ime. Uništa su tipično dinarsko planinsko selo, okruženo pašnjacima, livadama i šumskim kompleksima. Kroz istoriju, stanovnici su se bavili stočarstvom i sitnom poljoprivredom. Kao i ostatak grahovske opštine, i Uništa su bila poprište teških ratnih sukoba 1990-ih, a obnova zajednice odvijala se postepeno kroz naredne decenije.",
     image: generic2,
   },
   {
     name: "Varoš",
     description:
-      "Manje naselje s historijskim korijenima u urbanijoj funkciji ovog prostora.",
+      "Manje naselje sa istorijskim korijenima u urbanijoj funkciji ovog prostora.",
     details:
-      "Varoš je naziv koji u bosanskom i srpskom jeziku historijski označava gradski, varoški dio naselja — zapravo mali gradić ili trg s razvijenom tržišnom funkcijom. U kontekstu opštine Bosansko Grahovo, Varoš je manje naselje s historijskim korijenima u urbanijoj funkciji ovog prostora. Grahovska Varoš bila je dio šire mreže naselja u Grahovskom polju, a njena historija isprepletena je s historijom cjelokupnog grahovskog kraja — od rimskog doba, kroz osmanski period, Austro-Ugarsku, pa do modernog doba. Danas Varoš ostaje malo, mirno naselje u sklopu opštine, okruženo kraški oblovanim brdima i zelenim pašnjacima.",
+      "Varoš je naziv koji u srpskom jeziku istorijski označava gradski, varoški dio naselja — zapravo mali gradić ili trg sa razvijenom tržišnom funkcijom. U kontekstu opštine Bosansko Grahovo, Varoš je manje naselje sa istorijskim korijenima u urbanijoj funkciji ovog prostora. Grahovska Varoš bila je dio šire mreže naselja u Grahovskom polju, a njena istorija isprepletena je sa istorijom cjelokupnog grahovskog kraja — od rimskog doba, kroz osmanski period, Austro-Ugarsku, pa do modernog doba. Danas Varoš ostaje malo, mirno naselje u sklopu opštine, okruženo kraškim brdima i zelenim pašnjacima.",
     image: generic3,
   },
   {
