@@ -135,15 +135,15 @@ const otherVillages: Village[] = [
     description:
       "Selo u kraškom ambijentu, naziv po geomorfološkim formacijama dinarskog krša.",
     details:
-      "Korita su selo u opštini Bosansko Grahovo smješteno u karakterističnom kraškom ambijentu ovog dijela jugozapadne Bosne. Naziv \"korita\" referiše na kraška korita — specifične geomorfološke formacije nastale otapanjem vapnenca u dinarskom kršu. Kao i veći dio grahovskih sela, Korita su svjedočila teškim iskušenjima tokom rata 1990-ih, ali su se stanovnici postepeno vraćali i nastavljali s obnavljanjem zajednice. Primarna djelatnost mještana kroz historiju bilo je stočarstvo, uz korišćenje bogatih pašnjaka i livada koji i danas čine dominant znakovlju ovog kraja. Korita su asfaltnom cestom spojena s mrežom puteva koji vode prema centru opštine.",
+      "Korita su selo u opštini Bosansko Grahovo smješteno u karakterističnom kraškom ambijentu ovog dijela jugozapadne Bosne. Naziv \"korita\" odnosi se na kraška korita — specifične geomorfološke formacije nastale otapanjem krečnjaka u dinarskom kršu. Kao i veći dio grahovskih sela, Korita su svjedočila teškim iskušenjima tokom rata 1990-ih, ali su se stanovnici postepeno vraćali i nastavljali sa obnavljanjem zajednice. Primarna djelatnost mještana kroz istoriju bilo je stočarstvo, uz korišćenje bogatih pašnjaka i livada koji i danas čine prepoznatljivo obilježje ovog kraja. Korita su asfaltnom cestom spojena sa mrežom puteva koji vode prema centru opštine.",
     image: generic2,
   },
   {
     name: "Luka",
     description:
-      "Historijsko selo s grobovima iz ranog bronzanog doba (oko 2300. p.n.e.).",
+      "Istorijsko selo sa grobovima iz ranog bronzanog doba (oko 2300. p.n.e.).",
     details:
-      "Luka je historijski značajno selo u opštini Bosansko Grahovo, čija historija seže do ranog bronzanog doba. Naime, u blizini sela Luke otkriveni su grobovi koji potiču iz otprilike 2.300 godine p. n. e., što je jedan od najranijih dokaza o organiziranom životu na prostoru Bosanskog Grahova. Ovi nalazi svjedoče o tisućljetnoj kontinuiranoj prisutnosti čovjeka u ovom kraju, koji je zahvaljujući svojoj geografskoj poziciji između planina bio pogodan za organizovani zajednički život. Poput ostalih grahovskih naselja, i Luka se privređivanjem oslanjala na stočarstvo i sitnu poljoprivredu. Smještena u kraškom terenu, okružena je pašnjacima i šumama karakterističnim za dinarski planinski pojas.",
+      "Luka je istorijski značajno selo u opštini Bosansko Grahovo, čija istorija seže do ranog bronzanog doba. Naime, u blizini sela Luke otkriveni su grobovi koji potiču iz otprilike 2.300. godine p. n. e., što je jedan od najranijih dokaza o organizovanom životu na prostoru Bosanskog Grahova. Ovi nalazi svjedoče o hiljadugodišnjoj kontinuiranoj prisutnosti čovjeka u ovom kraju, koji je zahvaljujući svojoj geografskoj poziciji između planina bio pogodan za organizovani zajednički život. Poput ostalih grahovskih naselja, i Luka se u privređivanju oslanjala na stočarstvo i sitnu poljoprivredu. Smještena u kraškom terenu, okružena je pašnjacima i šumama karakterističnim za dinarski planinski pojas.",
     image: generic3,
   },
   {
