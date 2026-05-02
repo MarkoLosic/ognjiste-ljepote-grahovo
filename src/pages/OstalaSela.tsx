@@ -101,9 +101,9 @@ const otherVillages: Village[] = [
   {
     name: "Grkovci",
     description:
-      "Selo s gradinom starom 3000 godina i pretpostavljenim rimskim Stridonom.",
+      "Selo sa gradinom starom 3000 godina i pretpostavljenim rimskim Stridonom.",
     details:
-      "Grkovci su selo s iznimno dugom historijskom tradicijom u opštini Bosansko Grahovo. Prema popisu iz 2013. godine, u selu je živjelo 74 stanovnika, isključivo srpske nacionalnosti. Gradina u okolini Grkovaca osnovana je oko 1.000 godina prije nove ere i bila je neprekidno nastanjena sve do propasti Rimskog carstva u VI vijeku. Na ovom prostoru živjelo je ilirsko pleme Dicioni, koje su tokom rimskog perioda pokorili Rimljani u sklopu supresije ilirsko-panonske bune. Izuzetno važan historijski nalaz su rimski nadgrobni natpisi pronađeni u blizini policijske stanice u Grkovcima tokom 1970-ih godina — ti natpisi potvrđuju intenzivan rimski život u ovom kraju i dali su osnovu za hipotezu da se upravo ovdje nalazio rimski grad Stridon, rodni grad sv. Jeronima. Pored bogate prošlosti, Grkovci su tipično agrarno selo s tradicijom stočarstva i uzgoja kultura prilagođenih klimi dinarskog visočja.",
+      "Grkovci su selo sa izuzetno dugom istorijskom tradicijom u opštini Bosansko Grahovo. Prema popisu iz 2013. godine, u selu je živjelo 74 stanovnika, isključivo srpske nacionalnosti. Gradina u okolini Grkovaca osnovana je oko 1.000 godina prije nove ere i bila je neprekidno nastanjena sve do propasti Rimskog carstva u VI vijeku. Na ovom prostoru živjelo je ilirsko pleme Dicioni, koje su tokom rimskog perioda pokorili Rimljani u sklopu gušenja ilirsko-panonske bune. Izuzetno važan istorijski nalaz su rimski nadgrobni natpisi pronađeni u blizini policijske stanice u Grkovcima tokom 1970-ih godina — ti natpisi potvrđuju intenzivan rimski život u ovom kraju i dali su osnovu za hipotezu da se upravo ovdje nalazio rimski grad Stridon, rodni grad svetog Jeronima. Pored bogate prošlosti, Grkovci su tipično agrarno selo sa tradicijom stočarstva i uzgoja kultura prilagođenih klimi dinarskog visočja.",
     image: generic2,
   },
   {
@@ -111,7 +111,7 @@ const otherVillages: Village[] = [
     description:
       "Malo selo obuhvaćeno projektom elektrifikacije povratničkih naselja.",
     details:
-      "Isjek je malo selo u opštini Bosansko Grahovo, smješteno na brdskom terenu karakterističnom za ovaj kraj. Zajedno s Donjim Peuljem i Radlovićima, Isjek je bio obuhvaćen projektom elektrifikacije povratničkih naselja, u sklopu kojeg je izgrađen dalekovod kako bi se omogućio povratak i osnovna infrastruktura za stanovnike koji su se vratili nakon ratnih razaranja 1990-ih. Selo se privredno oslanja na stočarstvo i šumarstvo, a okruženo je pašnjacima i šumskim površinama tipičnim za dinarski planinski pojas. Isjek je putem spojen s centrom opštine i okolnim selima.",
+      "Isjek je malo selo u opštini Bosansko Grahovo, smješteno na brdskom terenu karakterističnom za ovaj kraj. Zajedno sa Donjim Peuljem i Radlovićima, Isjek je bio obuhvaćen projektom elektrifikacije povratničkih naselja, u sklopu kojeg je izgrađen dalekovod kako bi se omogućio povratak i osnovna infrastruktura za stanovnike koji su se vratili nakon ratnih razaranja 1990-ih. Selo se privredno oslanja na stočarstvo i šumarstvo, a okruženo je pašnjacima i šumskim površinama tipičnim za dinarski planinski pojas. Isjek je putem spojen sa centrom opštine i okolnim selima.",
     image: generic3,
   },
   {
