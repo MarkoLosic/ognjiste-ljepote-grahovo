@@ -167,7 +167,7 @@ const otherVillages: Village[] = [
     description:
       "Malo seosko naselje nazvano po porodici Marinka, u dinarskim brdima.",
     details:
-      "Marinkovci su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskih brda i kraških polja. Karakteristično po tipu porodičnog prezimena u imenu (Marinkovci — potomci Marinka), što je tipičan model imenovanja sela u ovom kraju, Marinkovci su tipična zaokružena seoska zajednica nastala od proširene porodice ili klana koji su naselili određeno područje. Stanovnici su se bavili tradicionalnom seoskom privredom — stočarstvom, sitnom poljoprivredom i iskorišćavanjem šumskih resursa. Kao i sva grahovska sela, i Marinkovci su asfaltnom cestom povezani s centrom opštine.",
+      "Marinkovci su malo seosko naselje u opštini Bosansko Grahovo, smješteno u okrilju dinarskih brda i kraških polja. Karakteristično po tipu porodičnog prezimena u imenu (Marinkovci — potomci Marinka), što je tipičan model imenovanja sela u ovom kraju, Marinkovci su tipična zaokružena seoska zajednica nastala od proširene porodice ili roda koji je naselio određeno područje. Stanovnici su se bavili tradicionalnom seoskom privredom — stočarstvom, sitnom poljoprivredom i iskorišćavanjem šumskih resursa. Kao i sva grahovska sela, i Marinkovci su asfaltnom cestom povezani sa centrom opštine.",
     image: generic2,
   },
   {
@@ -175,7 +175,7 @@ const otherVillages: Village[] = [
     description:
       "Selo na najnižoj nadmorskoj visini opštine — svega oko 400 metara.",
     details:
-      "Mračaj je posebno zanimljivo selo u opštini Bosansko Grahovo jer se nalazi na najnižoj nadmorskoj visini u čitavoj opštini — svega oko 400 metara. Ova geografska specifičnost čini Mračaj izuzetnim, jer sva ostala grahovska naselja nalaze se na znatno višim nadmorskim visinama, uobičajeno između 800 i 870 m. Niža nadmorska visina znači i blaži mikroklimat, što je pogodovalo razvoju sela. Mračaj je smješten u dolini ili uvali, zaštićen od vjetra, s pristupom vodotocima — izvori u selu Mračaj prepoznati su kao jedan od značajnijih hidroloških potencijala opštine. Tradicionalna privreda sela bila je stočarstvo i poljoprivreda, uz korišćenje povoljnijeg klimatskog položaja u odnosu na viša sela.",
+      "Mračaj je posebno zanimljivo selo u opštini Bosansko Grahovo jer se nalazi na najnižoj nadmorskoj visini u čitavoj opštini — svega oko 400 metara. Ova geografska specifičnost čini Mračaj izuzetnim, jer se sva ostala grahovska naselja nalaze na znatno višim nadmorskim visinama, uobičajeno između 800 i 870 m. Niža nadmorska visina znači i blažu mikroklimu, što je pogodovalo razvoju sela. Mračaj je smješten u dolini ili uvali, zaštićen od vjetra, sa pristupom vodotocima — izvori u selu Mračaj prepoznati su kao jedan od značajnijih hidroloških potencijala opštine. Tradicionalna privreda sela bila je stočarstvo i poljoprivreda, uz korišćenje povoljnijeg klimatskog položaja u odnosu na viša sela.",
     image: generic3,
   },
   {
