@@ -55,15 +55,15 @@ const otherVillages: Village[] = [
     description:
       "Naselje u sklopu MZ Crni Lug, obuhvaćeno projektima elektrifikacije povratničkih sela.",
     details:
-      "Donje Peulje je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Smješteno je u tipičnom dinarsko-kraškom reljefu, okruženo brdima i pašnjacima. Poput svih naselja ovog kraja, i Donje Peulje je u ratu 1990-ih pretrpjelo teška razaranja — stambeni objekti su u velikoj mjeri bili uništeni, a povratak stanovnika bio je postepen. U sklopu projekata elektrifikacije povratničkih naselja, Donje Peulje je bilo obuhvaćeno izgradnjom dalekovoda, zajedno sa selima Isjek i Radlovići. Tradicija ovog sela vezana je uz stočarstvo i sitnu poljoprivredu, a okolni pašnjaci i šume pružaju povoljne uvjete za ove djelatnosti i danas.",
+      "Donje Peulje je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Smješteno je u tipičnom dinarsko-kraškom reljefu, okruženo brdima i pašnjacima. Poput svih naselja ovog kraja, i Donje Peulje je u ratu 1990-ih pretrpjelo teška razaranja — stambeni objekti su u velikoj mjeri bili uništeni, a povratak stanovnika bio je postepen. U sklopu projekata elektrifikacije povratničkih naselja, Donje Peulje je bilo obuhvaćeno izgradnjom dalekovoda, zajedno sa selima Isjek i Radlovići. Tradicija ovog sela vezana je za stočarstvo i sitnu poljoprivredu, a okolni pašnjaci i šume pružaju povoljne uslove za ove djelatnosti i danas.",
     image: generic4,
   },
   {
     name: "Donji Kazanci",
     description:
-      "Selo u okviru MZ Crni Lug, dvojno naselje s Gornjim Kazancima.",
+      "Selo u okviru MZ Crni Lug, dvojno naselje sa Gornjim Kazancima.",
     details:
-      "Donji Kazanci su selo u opštini Bosansko Grahovo, smješteno u okviru Mjesne zajednice Crni Lug. Zajedno s Gornjim Kazancima čine jedno od karakterističnih dvojnih naselja ovog kraja u kojima gornji i donji dio nose ista osnovna imena a razlikuju se po položaju na reljefu. Podaci o broju stanovnika ukazuju na izrazito malu populaciju, što je karakteristika gotovo svih naselja grahovske opštine. Stanovnici su se tradicionalno bavili stočarstvom, šumarstvom i malom poljoprivredom, koristeći prirodne resurse dinamičnog kraškog terena. Selo je smješteno na brdsko-planinskom obodu Grahovskog polja, na sunčanim padinama što je tipično za raspored naselja u ovom kraju.",
+      "Donji Kazanci su selo u opštini Bosansko Grahovo, smješteno u okviru Mjesne zajednice Crni Lug. Zajedno sa Gornjim Kazancima čine jedno od karakterističnih dvojnih naselja ovog kraja u kojima gornji i donji dio nose ista osnovna imena, a razlikuju se po položaju na reljefu. Podaci o broju stanovnika ukazuju na izrazito malu populaciju, što je karakteristika gotovo svih naselja grahovske opštine. Stanovnici su se tradicionalno bavili stočarstvom, šumarstvom i sitnom poljoprivredom, koristeći prirodne resurse dinamičnog kraškog terena. Selo je smješteno na brdsko-planinskom obodu Grahovskog polja, na sunčanim padinama, što je tipično za raspored naselja u ovom kraju.",
     image: generic1,
   },
   {
