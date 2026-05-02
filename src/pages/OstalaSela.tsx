@@ -119,15 +119,15 @@ const otherVillages: Village[] = [
     description:
       "Naselje MZ Crni Lug u okrilju dinarskih brda i kraških jaruga.",
     details:
-      "Jaruga je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Naziv sela, koji u bosanskom jeziku opisuje uski, udubini slični teren, vjerovatno govori o geografskom karakteru mjesta — jaruge su karakteristična obilježja kraškog terena u ovom dijelu BiH. Smješteno u okrilju dinarskih brda, selo je okruženo livadama i šumskim kompleksima koji su oduvijek bili osnova privređivanja mještana. Stanovnici su se bavili stočarstvom, a istorijski izvori potvrđuju prisutnost organiziranih zajednica u ovom kraju još od rimskog i predrimskog doba. Jaruga je asfaltnim putem spojena s okolnim selima i središtem opštine Bosansko Grahovo.",
+      "Jaruga je naselje u opštini Bosansko Grahovo koje administrativno pripada Mjesnoj zajednici Crni Lug. Naziv sela, koji u srpskom jeziku opisuje uski, udubini sličan teren, vjerovatno govori o geografskom karakteru mjesta — jaruge su karakteristično obilježje kraškog terena u ovom dijelu BiH. Smješteno u okrilju dinarskih brda, selo je okruženo livadama i šumskim kompleksima koji su oduvijek bili osnova privređivanja mještana. Stanovnici su se bavili stočarstvom, a istorijski izvori potvrđuju prisustvo organizovanih zajednica u ovom kraju još od rimskog i predrimskog doba. Jaruga je asfaltnim putem spojena sa okolnim selima i središtem opštine Bosansko Grahovo.",
     image: generic4,
   },
   {
     name: "Kesići",
     description:
-      "Rodno mjesto Đure Pucara Starog (1899–1979), s prahistorijskom gradinom.",
+      "Rodno mjesto Đure Pucara Starog (1899–1979), sa praistorijskom gradinom.",
     details:
-      "Kesići su selo u opštini Bosansko Grahovo s posebnim historijskim značajem — upravo ovdje, 1899. godine, rodio se Đuro Pucar Stari (1899–1979), istaknuti partijski i politički lider SFRJ, koji je bio predsjednik Bosne i Hercegovine i jedna od ključnih figura antifašističkog pokreta u ovom kraju. Sačuvana je tradicija sjećanja na ovog lokalnog sina buntovne Krajine koji je obilježio povijest cijele regije. Između sela Kesića i Maleševaca, tokom arheoloških istraživanja, pronađena je gradina — utvrđeno prahistorijsko naselje koje potvrđuje kontinuitet životne prisutnosti na ovom prostoru još od davnih vremena. Kao i ostala grahovska sela, i Kesići se odlikuju tipičnim dinarskim krajolikom s livadama, šumama i kraškim formacijama.",
+      "Kesići su selo u opštini Bosansko Grahovo sa posebnim istorijskim značajem — upravo ovdje, 1899. godine, rodio se Đuro Pucar Stari (1899–1979), istaknuti partijski i politički lider SFRJ, koji je bio predsjednik Bosne i Hercegovine i jedna od ključnih figura antifašističkog pokreta u ovom kraju. Sačuvana je tradicija sjećanja na ovog lokalnog sina buntovne Krajine koji je obilježio istoriju cijele regije. Između sela Kesići i Maleševci, tokom arheoloških istraživanja, pronađena je gradina — utvrđeno praistorijsko naselje koje potvrđuje kontinuitet ljudskog prisustva na ovom prostoru još od davnih vremena. Kao i ostala grahovska sela, i Kesići se odlikuju tipičnim dinarskim pejzažem sa livadama, šumama i kraškim formacijama.",
     image: generic1,
   },
   {
