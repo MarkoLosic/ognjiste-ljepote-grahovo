@@ -199,7 +199,7 @@ const otherVillages: Village[] = [
     description:
       "Selo uz Pečenačko jezero, jedno od tri prirodna jezera u opštini.",
     details:
-      "Pečenci su selo u opštini Bosansko Grahovo smješteno u okrilju kraških polja i dinarskog planinskog terena. U blizini sela nalazi se Pečenačko jezero — prirodno jezero u Grahovskom polju, jedno od tri prirodna jezera na prostoru opštine, pored Šatorskog i Nuglašičkog. Ovo jezero ima potencijal za razvoj ribarstva i rekreativnog turizma. Kao i ostala grahovska sela, i Pečenci imaju dugu tradicionalnu privredu utemeljenu na stočarstvu i korišćenju bogatih pašnjaka koji okružuju Grahovsko polje. Selo je asfaltnom cestom spojen s centrom opštine.",
+      "Pečenci su selo u opštini Bosansko Grahovo smješteno u okrilju kraških polja i dinarskog planinskog terena. U blizini sela nalazi se Pečenačko jezero — prirodno jezero u Grahovskom polju, jedno od tri prirodna jezera na prostoru opštine, pored Šatorskog i Nuglašičkog. Ovo jezero ima potencijal za razvoj ribarstva i rekreativnog turizma. Kao i ostala grahovska sela, i Pečenci imaju dugu tradicionalnu privredu utemeljenu na stočarstvu i korišćenju bogatih pašnjaka koji okružuju Grahovsko polje. Selo je asfaltnom cestom spojeno sa centrom opštine.",
     image: generic2,
   },
   {
@@ -207,7 +207,7 @@ const otherVillages: Village[] = [
     description:
       "Selo sa stećcima Dobrih Bošnjana iz 12. vijeka i bivšim rasadnikom drveća.",
     details:
-      "Pržine su historijski i kulturno značajno selo u opštini Bosansko Grahovo. U selu i njegovoj okolini sačuvani su stećci \"Dobrih Bošnjana\" — monumentalni nadgrobni kameni blokovi koji potiču iz 12. vijeka i svjedoče o prisutnosti bosanskih krstjana (Crkve bosanske) na ovom prostoru u periodu bosanskog srednjovjekovlja. Ovi stećci, osim historijskog, imaju i izuzetnu estetsku i kulturnu vrijednost, kao dio fenomena koji je u cijelosti upisan na UNESCO-ovu Listu svjetske baštine. U selu Pržine zabilježen je i rasadnik za uzgoj sadnica četinarskog i lišćarskog drveća — Rasadnik Pržine — koji je do ratnih razaranja zapošljavao oko 120 radnika i predstavljao važan ekonomski subjekt opštine. U neposrednoj blizini sela, Separacija Pržine bavila se eksploatacijom šljunka i pijeska, što ostaje jedna od aktivnijih privrednih aktivnosti u opštini. Pržine su smještene u kraškom terenu s pristupom kvalitetnim pašnjacima i šumama.",
+      "Pržine su istorijski i kulturno značajno selo u opštini Bosansko Grahovo. U selu i njegovoj okolini sačuvani su stećci \"Dobrih Bošnjana\" — monumentalni nadgrobni kameni blokovi koji potiču iz 12. vijeka i svjedoče o prisustvu bosanskih krstjana (Crkve bosanske) na ovom prostoru u periodu bosanskog srednjeg vijeka. Ovi stećci, osim istorijskog, imaju i izuzetnu estetsku i kulturnu vrijednost, kao dio fenomena koji je u cijelosti upisan na UNESCO-vu Listu svjetske baštine. U selu Pržine zabilježen je i rasadnik za uzgoj sadnica četinarskog i lišćarskog drveća — Rasadnik Pržine — koji je do ratnih razaranja zapošljavao oko 120 radnika i predstavljao važan ekonomski subjekt opštine. U neposrednoj blizini sela, Separacija Pržine bavila se eksploatacijom šljunka i pijeska, što ostaje jedna od aktivnijih privrednih aktivnosti u opštini. Pržine su smještene u kraškom terenu sa pristupom kvalitetnim pašnjacima i šumama.",
     image: generic3,
   },
   {
