@@ -87,7 +87,7 @@ const otherVillages: Village[] = [
     description:
       "Gornji dio dvojnog naselja Peulja, na brdskim padinama iznad kraških polja.",
     details:
-      "Gornje Peulje je naselje u opštini Bosansko Grahovo, gornji dio geografski-administrativne cjeline Peulja, koje zajedno s Donjim Peuljem tvori tipično dvojno dinarsko naselje. Pripada Mjesnoj zajednici Crni Lug. Smješteno je na brdskim padinama iznad kraških polja, okruženo šumom i pašnjacima pogodnim za stočarstvo. Ratna devastacija 1990-ih teško je pogodila i ovo selo, ali su se povratnici postepeno vraćali. Kao i u cijeloj opštini, prirodno okruženje nudi potencijale za razvoj tradicionalnog stočarstva i ekološke poljoprivrede, što ostaje oslonac ekonomskog opstanka povratničkih domaćinstava.",
+      "Gornje Peulje je naselje u opštini Bosansko Grahovo, gornji dio geografsko-administrativne cjeline Peulja, koje zajedno sa Donjim Peuljem tvori tipično dvojno dinarsko naselje. Pripada Mjesnoj zajednici Crni Lug. Smješteno je na brdskim padinama iznad kraških polja, okruženo šumom i pašnjacima pogodnim za stočarstvo. Ratna razaranja 1990-ih teško su pogodila i ovo selo, ali su se povratnici postepeno vraćali. Kao i u cijeloj opštini, prirodno okruženje nudi potencijale za razvoj tradicionalnog stočarstva i ekološke poljoprivrede, što ostaje oslonac ekonomskog opstanka povratničkih domaćinstava.",
     image: generic4,
   },
   {
@@ -95,7 +95,7 @@ const otherVillages: Village[] = [
     description:
       "Selo iznad Donjih Kazanaca na brdskim padinama dinarskog terena.",
     details:
-      "Gornji Kazanci su selo u opštini Bosansko Grahovo, smješteno iznad Donjih Kazanaca na brdskim padinama karakterističnog dinarskog terena. Poput svih grahovskih naselja, smješteno je na sunčanoj i od vjetra zaštićenoj padini, s lakim pristupom pašnjacima i šumskim površinama. Selo administrativno pripada Mjesnoj zajednici Crni Lug. Stanovnici Gornji Kazanaca bavili su se kroz generacije stočarstvom i sitnom poljoprivredom, koristeći bogate livade i pašnjake ovog kraja. Rat 1990-ih donio je teška razaranja, ali se postepeno odvijao povratak u okviru šireg procesa obnove grahovske opštine.",
+      "Gornji Kazanci su selo u opštini Bosansko Grahovo, smješteno iznad Donjih Kazanaca na brdskim padinama karakterističnog dinarskog terena. Poput svih grahovskih naselja, smješteno je na sunčanoj i od vjetra zaštićenoj padini, sa lakim pristupom pašnjacima i šumskim površinama. Selo administrativno pripada Mjesnoj zajednici Crni Lug. Stanovnici Gornjih Kazanaca bavili su se kroz generacije stočarstvom i sitnom poljoprivredom, koristeći bogate livade i pašnjake ovog kraja. Rat 1990-ih donio je teška razaranja, ali se postepeno odvijao povratak u okviru šireg procesa obnove grahovske opštine.",
     image: generic1,
   },
   {
