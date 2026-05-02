@@ -149,17 +149,17 @@ const otherVillages: Village[] = [
   {
     name: "Maleševci",
     description:
-      "Selo s prahistorijskom gradinom između Maleševaca i Kesića.",
+      "Selo sa praistorijskom gradinom između Maleševaca i Kesića.",
     details:
-      "Maleševci su selo u opštini Bosansko Grahovo, smješteno u tipičnom dinarsko-kraškom krajoliku. U blizini Maleševaca, u prostoru između ovog sela i Kesića, pronađena je prahistorijska gradina — utvrđeno naselje koje potvrđuje kontinuitet ljudskog prisustva na ovom prostoru još iz prethistorijskog doba. Stanovnici Maleševaca bavili su se kroz generacije stočarstvom i poljoprivredom, prilagođavajući svoju privređivačku strategiju tvrdim uvjetima dinarskog visočja. Selo je asfaltnom putnom vezom spojeno s mrežom opštinskih puteva i centrom Bosanskog Grahova.",
+      "Maleševci su selo u opštini Bosansko Grahovo, smješteno u tipičnom dinarsko-kraškom pejzažu. U blizini Maleševaca, u prostoru između ovog sela i Kesića, pronađena je praistorijska gradina — utvrđeno naselje koje potvrđuje kontinuitet ljudskog prisustva na ovom prostoru još iz praistorijskog doba. Stanovnici Maleševaca bavili su se kroz generacije stočarstvom i poljoprivredom, prilagođavajući svoju privređivačku strategiju tvrdim uslovima dinarskog visočja. Selo je asfaltnom putnom vezom spojeno sa mrežom opštinskih puteva i centrom Bosanskog Grahova.",
     image: generic4,
   },
   {
     name: "Malo Tičevo",
     description:
-      "Naselje koje s Velikim Tičevom tvori geografsku i historijsku cjelinu.",
+      "Naselje koje sa Velikim Tičevom tvori geografsku i istorijsku cjelinu.",
     details:
-      "Malo Tičevo je naselje u opštini Bosansko Grahovo koje zajedno s Velikim Tičevom tvori geografsku i historijsku cjelinu u ovom kraju. Smješteno je u tipičnom dinarskom krajoliku okruženom brdima i šumama. Naziv \"Tičevo\" ima historijsko porijeklo i vezan je uz tradicije ovog kraja. Kao i ostala manja sela opštine, i Malo Tičevo je pretrpjelo teška ratna razaranja 1990-ih, a broj povratnika je ostao skroman. Prirodni potencijali — pašnjaci, šume i čist zrak dinarskog visočja — ostaju vrijednost ovog kraja i osnova za razvoj održive i ekološke privrede.",
+      "Malo Tičevo je naselje u opštini Bosansko Grahovo koje zajedno sa Velikim Tičevom tvori geografsku i istorijsku cjelinu u ovom kraju. Smješteno je u tipičnom dinarskom pejzažu okruženom brdima i šumama. Naziv \"Tičevo\" ima istorijsko porijeklo i vezan je za tradiciju ovog kraja. Kao i ostala manja sela opštine, i Malo Tičevo je pretrpjelo teška ratna razaranja 1990-ih, a broj povratnika je ostao skroman. Prirodni potencijali — pašnjaci, šume i čist vazduh dinarskog visočja — ostaju vrijednost ovog kraja i osnova za razvoj održive i ekološke privrede.",
     image: generic1,
   },
   {
