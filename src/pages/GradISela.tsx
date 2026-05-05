@@ -196,7 +196,7 @@ export default function GradISela() {
               duration: 0.6,
               delay: 0.2
             }} className={`relative ${village.reverse ? "md:col-start-1 md:row-start-1" : ""}`}>
-                  <img src={village.image} alt={village.name} className="rounded-lg shadow-lg w-full h-[350px] md:h-[400px] object-cover" />
+                  <img src={village.image} alt={village.name} loading="lazy" decoding="async" className="rounded-lg shadow-lg w-full h-[350px] md:h-[400px] object-cover" />
                   <div className={`absolute -bottom-4 ${village.reverse ? "-right-4" : "-left-4"} w-20 h-20 bg-accent/30 rounded-lg -z-10`} />
                 </motion.div>
               </motion.div>)}
