@@ -358,6 +358,20 @@ export default function Galerija() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedImageIndex]);
 
+  // Preload neighbouring images for snappy lightbox navigation
+  useEffect(() => {
+    if (selectedImageIndex === null || allImages.length === 0) return;
+    const neighbours = [
+      allImages[(selectedImageIndex + 1) % allImages.length]?.src,
+      allImages[(selectedImageIndex - 1 + allImages.length) % allImages.length]?.src,
+    ].filter(Boolean) as string[];
+    neighbours.forEach((src) => {
+      const img = new Image();
+      img.decoding = "async";
+      img.src = src;
+    });
+  }, [selectedImageIndex, allImages.length]);
+
   const getTotalSize = () => {
     const totalBytes = selectedFiles.reduce((sum, file) => sum + file.size, 0);
     return (totalBytes / (1024 * 1024)).toFixed(1);
