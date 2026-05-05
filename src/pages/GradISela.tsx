@@ -241,7 +241,7 @@ export default function GradISela() {
           }}>
                 <Link to="/ostala-sela" className="card-nature group block h-full hover:shadow-xl transition-shadow">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={village.image} alt={village.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <img src={village.image} alt={village.name} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <div className="p-5">
                     <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
