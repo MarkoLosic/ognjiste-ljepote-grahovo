@@ -365,6 +365,8 @@ export default function OstalaSela() {
                 <img
                   src={selected.image}
                   alt={selected.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
