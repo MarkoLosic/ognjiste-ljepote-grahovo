@@ -104,7 +104,7 @@ export default function ONama() {
             duration: 0.6,
             delay: 0.1
           }}>
-              <img src={heroImage} alt="Pogled na Bosansko Grahovo" className="rounded-lg shadow-lg w-full h-[400px] object-cover" />
+              <img src={heroImage} alt="Pogled na Bosansko Grahovo" loading="lazy" decoding="async" className="rounded-lg shadow-lg w-full h-[400px] object-cover" />
             </motion.div>
           </div>
         </div>
