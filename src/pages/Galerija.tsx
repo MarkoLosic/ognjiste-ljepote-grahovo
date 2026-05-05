@@ -8,6 +8,7 @@ import { useAdmin } from "@/hooks/useAdmin";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Progress } from "@/components/ui/progress";
+import { SmartImage } from "@/components/ui/SmartImage";
 import heroImage from "@/assets/hero-mountains.jpg";
 import dinaraImage from "@/assets/dinara-mountain.jpg";
 import satorImage from "@/assets/sator-mountain.jpg";
@@ -357,6 +358,20 @@ export default function Galerija() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedImageIndex]);
 
+  // Preload neighbouring images for snappy lightbox navigation
+  useEffect(() => {
+    if (selectedImageIndex === null || allImages.length === 0) return;
+    const neighbours = [
+      allImages[(selectedImageIndex + 1) % allImages.length]?.src,
+      allImages[(selectedImageIndex - 1 + allImages.length) % allImages.length]?.src,
+    ].filter(Boolean) as string[];
+    neighbours.forEach((src) => {
+      const img = new Image();
+      img.decoding = "async";
+      img.src = src;
+    });
+  }, [selectedImageIndex, allImages.length]);
+
   const getTotalSize = () => {
     const totalBytes = selectedFiles.reduce((sum, file) => sum + file.size, 0);
     return (totalBytes / (1024 * 1024)).toFixed(1);
@@ -539,7 +554,7 @@ export default function Galerija() {
                       : 'opacity-50 hover:opacity-80'
                   }`}
                 >
-                  <img
+                  <SmartImage
                     src={img.src}
                     alt={img.title || `Slika ${index + 1}`}
                     className="w-full h-full object-cover"
@@ -553,14 +568,12 @@ export default function Galerija() {
               {selectedImageIndex !== null ? selectedImageIndex + 1 : 0} / {allImages.length}
             </div>
 
-            <motion.img
+            <motion.div
               key={selectedImage}
               initial={{ scale: 0.9, opacity: 0, x: 0 }}
               animate={{ scale: 1, opacity: 1, x: 0 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              src={selectedImage}
-              alt="Uvećana slika"
-              className="max-w-full max-h-[85vh] object-contain rounded-lg cursor-grab active:cursor-grabbing"
+              className="max-w-full max-h-[85vh] cursor-grab active:cursor-grabbing"
               onClick={(e) => e.stopPropagation()}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
@@ -568,14 +581,22 @@ export default function Galerija() {
               onDragEnd={(e, { offset, velocity }) => {
                 const swipe = offset.x * velocity.x;
                 const swipeThreshold = 10000;
-                
+
                 if (swipe < -swipeThreshold || offset.x < -100) {
                   navigateImage('next');
                 } else if (swipe > swipeThreshold || offset.x > 100) {
                   navigateImage('prev');
                 }
               }}
-            />
+            >
+              <SmartImage
+                src={selectedImage}
+                alt="Uvećana slika"
+                eager
+                className="max-w-full max-h-[85vh] object-contain rounded-lg pointer-events-none select-none"
+                draggable={false}
+              />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
