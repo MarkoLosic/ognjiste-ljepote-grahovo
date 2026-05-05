@@ -21,6 +21,8 @@ export function Footer() {
               <img 
                 src={logo} 
                 alt={'Planinarsko Ekološko Društvo "Ognjište Bosansko Grahovo"'} 
+                loading="lazy"
+                decoding="async"
                 className="h-20 w-auto brightness-0 invert"
               />
             </Link>
