@@ -44,6 +44,37 @@ export default function Home() {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute("href", window.location.origin + "/");
+
+    const SCHEMA_ID = "ld-localbusiness-home";
+    let script = document.head.querySelector<HTMLScriptElement>(`script#${SCHEMA_ID}`);
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = SCHEMA_ID;
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "TouristAttraction"],
+      name: "Ognjište Bosansko Grahovo",
+      description: SEO_DESCRIPTION,
+      image: SEO_IMAGE,
+      url: window.location.origin + "/",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bosansko Grahovo",
+        addressCountry: "BA",
+      },
+      areaServed: {
+        "@type": "Place",
+        name: "Bosansko Grahovo",
+      },
+      knowsAbout: ["Turistički vodič", "Planinarenje", "Šatorsko jezero", "Dinara", "Kulturna baština"],
+    });
+
+    return () => {
+      document.head.querySelector(`script#${SCHEMA_ID}`)?.remove();
+    };
   }, []);
 
   return (
