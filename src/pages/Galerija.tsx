@@ -568,14 +568,12 @@ export default function Galerija() {
               {selectedImageIndex !== null ? selectedImageIndex + 1 : 0} / {allImages.length}
             </div>
 
-            <motion.img
+            <motion.div
               key={selectedImage}
               initial={{ scale: 0.9, opacity: 0, x: 0 }}
               animate={{ scale: 1, opacity: 1, x: 0 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              src={selectedImage}
-              alt="Uvećana slika"
-              className="max-w-full max-h-[85vh] object-contain rounded-lg cursor-grab active:cursor-grabbing"
+              className="max-w-full max-h-[85vh] cursor-grab active:cursor-grabbing"
               onClick={(e) => e.stopPropagation()}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
@@ -583,14 +581,22 @@ export default function Galerija() {
               onDragEnd={(e, { offset, velocity }) => {
                 const swipe = offset.x * velocity.x;
                 const swipeThreshold = 10000;
-                
+
                 if (swipe < -swipeThreshold || offset.x < -100) {
                   navigateImage('next');
                 } else if (swipe > swipeThreshold || offset.x > 100) {
                   navigateImage('prev');
                 }
               }}
-            />
+            >
+              <SmartImage
+                src={selectedImage}
+                alt="Uvećana slika"
+                eager
+                className="max-w-full max-h-[85vh] object-contain rounded-lg pointer-events-none select-none"
+                draggable={false}
+              />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
