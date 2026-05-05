@@ -131,7 +131,7 @@ export default function GradISela() {
             duration: 0.6,
             delay: 0.1
           }} className="relative">
-              <img alt="Centar Bosanskog Grahova" className="rounded-lg shadow-lg w-full h-[400px] object-cover" src="/lovable-uploads/2ced3733-39ac-4aad-9585-de411d7b8b6c.jpg" />
+              <img alt="Centar Bosanskog Grahova" loading="lazy" decoding="async" className="rounded-lg shadow-lg w-full h-[400px] object-cover" src="/lovable-uploads/2ced3733-39ac-4aad-9585-de411d7b8b6c.jpg" />
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary rounded-lg -z-10" />
             </motion.div>
           </div>
