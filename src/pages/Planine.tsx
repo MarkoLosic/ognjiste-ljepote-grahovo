@@ -119,6 +119,8 @@ export default function Planine() {
                   <img
                     src={mountain.image}
                     alt={mountain.name}
+                    loading="lazy"
+                    decoding="async"
                     className="rounded-lg shadow-lg w-full h-[400px] md:h-[500px] object-cover"
                   />
                   <div className={`absolute -bottom-4 ${mountain.reverse ? "-right-4" : "-left-4"} w-32 h-32 bg-accent/20 rounded-lg -z-10`} />
