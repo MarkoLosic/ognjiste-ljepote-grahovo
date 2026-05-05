@@ -554,7 +554,7 @@ export default function Galerija() {
                       : 'opacity-50 hover:opacity-80'
                   }`}
                 >
-                  <img
+                  <SmartImage
                     src={img.src}
                     alt={img.title || `Slika ${index + 1}`}
                     className="w-full h-full object-cover"
