@@ -80,6 +80,14 @@ export default function Galerija() {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // SEO edit state
+  const [editingImage, setEditingImage] = useState<GalleryImage | null>(null);
+  const [editSeoTitle, setEditSeoTitle] = useState("");
+  const [editSeoDescription, setEditSeoDescription] = useState("");
+  const [editAltText, setEditAltText] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [savingSeo, setSavingSeo] = useState(false);
   
   const { user } = useAuth();
   const { isAdmin } = useAdmin();
