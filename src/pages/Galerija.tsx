@@ -93,7 +93,7 @@ export default function Galerija() {
   async function fetchImages() {
     const { data, error } = await supabase
       .from("gallery_images")
-      .select("id, title, description, image_url, created_at")
+      .select("id, title, description, image_url, created_at, seo_title, seo_description, alt_text")
       .order("created_at", { ascending: false });
 
     if (error) {
