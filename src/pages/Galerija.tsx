@@ -25,6 +25,9 @@ interface GalleryImage {
   description: string | null;
   image_url: string;
   created_at: string;
+  seo_title: string | null;
+  seo_description: string | null;
+  alt_text: string | null;
 }
 
 // Static images as fallback
