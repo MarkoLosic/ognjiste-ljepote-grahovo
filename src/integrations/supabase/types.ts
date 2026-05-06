@@ -40,26 +40,35 @@ export type Database = {
       }
       gallery_images: {
         Row: {
+          alt_text: string | null
           created_at: string
           description: string | null
           id: string
           image_url: string
+          seo_description: string | null
+          seo_title: string | null
           title: string | null
           updated_at: string
         }
         Insert: {
+          alt_text?: string | null
           created_at?: string
           description?: string | null
           id?: string
           image_url: string
+          seo_description?: string | null
+          seo_title?: string | null
           title?: string | null
           updated_at?: string
         }
         Update: {
+          alt_text?: string | null
           created_at?: string
           description?: string | null
           id?: string
           image_url?: string
+          seo_description?: string | null
+          seo_title?: string | null
           title?: string | null
           updated_at?: string
         }

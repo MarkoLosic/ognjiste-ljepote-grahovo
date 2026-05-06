@@ -1,0 +1,4 @@
+ALTER TABLE public.gallery_images
+ADD COLUMN IF NOT EXISTS seo_title TEXT,
+ADD COLUMN IF NOT EXISTS seo_description TEXT,
+ADD COLUMN IF NOT EXISTS alt_text TEXT;
