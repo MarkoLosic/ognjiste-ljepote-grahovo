@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Plus, ZoomIn, Trash2, Upload, ImagePlus, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Plus, ZoomIn, Trash2, Upload, ImagePlus, ChevronLeft, ChevronRight, Pencil } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
 import { useAdmin } from "@/hooks/useAdmin";
 import { supabase } from "@/integrations/supabase/client";
@@ -22,6 +25,9 @@ interface GalleryImage {
   description: string | null;
   image_url: string;
   created_at: string;
+  seo_title: string | null;
+  seo_description: string | null;
+  alt_text: string | null;
 }
 
 // Static images as fallback
@@ -74,6 +80,14 @@ export default function Galerija() {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // SEO edit state
+  const [editingImage, setEditingImage] = useState<GalleryImage | null>(null);
+  const [editSeoTitle, setEditSeoTitle] = useState("");
+  const [editSeoDescription, setEditSeoDescription] = useState("");
+  const [editAltText, setEditAltText] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [savingSeo, setSavingSeo] = useState(false);
   
   const { user } = useAuth();
   const { isAdmin } = useAdmin();
@@ -87,7 +101,7 @@ export default function Galerija() {
   async function fetchImages() {
     const { data, error } = await supabase
       .from("gallery_images")
-      .select("id, title, description, image_url, created_at")
+      .select("id, title, description, image_url, created_at, seo_title, seo_description, alt_text")
       .order("created_at", { ascending: false });
 
     if (error) {
@@ -268,6 +282,66 @@ export default function Galerija() {
     }
   }
 
+  function openSeoEditor(image: GalleryImage) {
+    setEditingImage(image);
+    setEditTitle(image.title || "");
+    setEditSeoTitle(image.seo_title || "");
+    setEditSeoDescription(image.seo_description || "");
+    setEditAltText(image.alt_text || "");
+  }
+
+  function closeSeoEditor() {
+    setEditingImage(null);
+    setEditTitle("");
+    setEditSeoTitle("");
+    setEditSeoDescription("");
+    setEditAltText("");
+  }
+
+  async function handleSaveSeo() {
+    if (!editingImage) return;
+    setSavingSeo(true);
+    try {
+      const { error } = await supabase
+        .from("gallery_images")
+        .update({
+          title: editTitle.trim() || null,
+          seo_title: editSeoTitle.trim() || null,
+          seo_description: editSeoDescription.trim() || null,
+          alt_text: editAltText.trim() || null,
+        })
+        .eq("id", editingImage.id);
+
+      if (error) throw error;
+
+      setDbImages((prev) =>
+        prev.map((img) =>
+          img.id === editingImage.id
+            ? {
+                ...img,
+                title: editTitle.trim() || null,
+                seo_title: editSeoTitle.trim() || null,
+                seo_description: editSeoDescription.trim() || null,
+                alt_text: editAltText.trim() || null,
+              }
+            : img,
+        ),
+      );
+
+      toast({ title: "Sačuvano", description: "SEO podaci su ažurirani." });
+      closeSeoEditor();
+    } catch (error: any) {
+      console.error("Error updating SEO:", error);
+      toast({
+        title: "Greška",
+        description: error.message || "Nije moguće sačuvati izmjene.",
+        variant: "destructive",
+      });
+    } finally {
+      setSavingSeo(false);
+    }
+  }
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
     
@@ -427,30 +501,42 @@ export default function Galerija() {
                 >
                   <img
                     src={image.image_url}
-                    alt={image.title || "Galerija slika"}
+                    alt={image.alt_text || image.title || "Galerija slika"}
                     loading="lazy"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300 flex items-center justify-center pointer-events-none">
                     <ZoomIn className="text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-10 w-10" />
                   </div>
-                  {image.title && (
+                  {(image.seo_title || image.title) && (
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/80 to-transparent pointer-events-none">
                       <span className="text-primary-foreground text-sm font-medium">
-                        {image.title}
+                        {image.seo_title || image.title}
                       </span>
                     </div>
                   )}
                   {isAdmin && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleDelete(image);
-                      }}
-                      className="absolute top-2 right-2 p-2 bg-destructive text-destructive-foreground rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-destructive/90 z-10"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <div className="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openSeoEditor(image);
+                        }}
+                        className="p-2 bg-primary text-primary-foreground rounded-full hover:bg-primary/90"
+                        aria-label="Uredi SEO"
+                      >
+                        <Pencil className="h-4 w-4" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDelete(image);
+                        }}
+                        className="p-2 bg-destructive text-destructive-foreground rounded-full hover:bg-destructive/90"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
                   )}
                 </motion.div>
               ))}
@@ -723,6 +809,120 @@ export default function Galerija() {
                   disabled={uploading || selectedFiles.length === 0}
                 >
                   {uploading ? "Učitavanje..." : `Učitaj (${selectedFiles.length})`}
+                </Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* SEO Edit Modal */}
+      <AnimatePresence>
+        {editingImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-foreground/50 flex items-center justify-center p-4"
+            onClick={() => !savingSeo && closeSeoEditor()}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="bg-background rounded-xl p-6 md:p-8 max-w-lg w-full shadow-xl max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="font-serif text-2xl font-semibold text-foreground">
+                  Uredi SEO podatke
+                </h3>
+                <button
+                  onClick={() => !savingSeo && closeSeoEditor()}
+                  className="p-1 hover:bg-muted rounded-full transition-colors"
+                  disabled={savingSeo}
+                >
+                  <X className="h-5 w-5 text-muted-foreground" />
+                </button>
+              </div>
+
+              <div className="mb-4">
+                <img
+                  src={editingImage.image_url}
+                  alt={editingImage.alt_text || editingImage.title || ""}
+                  className="w-full h-40 object-cover rounded-md"
+                />
+              </div>
+
+              <div className="space-y-4 mb-6">
+                <div>
+                  <Label htmlFor="seo-title-name">Naslov slike</Label>
+                  <Input
+                    id="seo-title-name"
+                    value={editTitle}
+                    onChange={(e) => setEditTitle(e.target.value)}
+                    placeholder="Kratak naziv slike"
+                    maxLength={120}
+                    disabled={savingSeo}
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="seo-meta-title">Meta naslov (SEO)</Label>
+                  <Input
+                    id="seo-meta-title"
+                    value={editSeoTitle}
+                    onChange={(e) => setEditSeoTitle(e.target.value)}
+                    placeholder="Preporuka: do 60 karaktera"
+                    maxLength={70}
+                    disabled={savingSeo}
+                  />
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {editSeoTitle.length}/60
+                  </p>
+                </div>
+                <div>
+                  <Label htmlFor="seo-meta-desc">Meta opis (SEO)</Label>
+                  <Textarea
+                    id="seo-meta-desc"
+                    value={editSeoDescription}
+                    onChange={(e) => setEditSeoDescription(e.target.value)}
+                    placeholder="Preporuka: do 160 karaktera"
+                    rows={3}
+                    maxLength={200}
+                    disabled={savingSeo}
+                  />
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {editSeoDescription.length}/160
+                  </p>
+                </div>
+                <div>
+                  <Label htmlFor="seo-alt">Alt tekst (pristupačnost i SEO)</Label>
+                  <Input
+                    id="seo-alt"
+                    value={editAltText}
+                    onChange={(e) => setEditAltText(e.target.value)}
+                    placeholder="Opis slike za čitače ekrana"
+                    maxLength={150}
+                    disabled={savingSeo}
+                  />
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <Button
+                  variant="outline"
+                  className="flex-1"
+                  onClick={closeSeoEditor}
+                  disabled={savingSeo}
+                >
+                  Odustani
+                </Button>
+                <Button
+                  className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
+                  onClick={handleSaveSeo}
+                  disabled={savingSeo}
+                >
+                  {savingSeo ? "Čuvanje..." : "Sačuvaj"}
                 </Button>
               </div>
             </motion.div>
