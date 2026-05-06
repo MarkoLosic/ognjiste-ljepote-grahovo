@@ -815,6 +815,120 @@ export default function Galerija() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* SEO Edit Modal */}
+      <AnimatePresence>
+        {editingImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-foreground/50 flex items-center justify-center p-4"
+            onClick={() => !savingSeo && closeSeoEditor()}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="bg-background rounded-xl p-6 md:p-8 max-w-lg w-full shadow-xl max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="font-serif text-2xl font-semibold text-foreground">
+                  Uredi SEO podatke
+                </h3>
+                <button
+                  onClick={() => !savingSeo && closeSeoEditor()}
+                  className="p-1 hover:bg-muted rounded-full transition-colors"
+                  disabled={savingSeo}
+                >
+                  <X className="h-5 w-5 text-muted-foreground" />
+                </button>
+              </div>
+
+              <div className="mb-4">
+                <img
+                  src={editingImage.image_url}
+                  alt={editingImage.alt_text || editingImage.title || ""}
+                  className="w-full h-40 object-cover rounded-md"
+                />
+              </div>
+
+              <div className="space-y-4 mb-6">
+                <div>
+                  <Label htmlFor="seo-title-name">Naslov slike</Label>
+                  <Input
+                    id="seo-title-name"
+                    value={editTitle}
+                    onChange={(e) => setEditTitle(e.target.value)}
+                    placeholder="Kratak naziv slike"
+                    maxLength={120}
+                    disabled={savingSeo}
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="seo-meta-title">Meta naslov (SEO)</Label>
+                  <Input
+                    id="seo-meta-title"
+                    value={editSeoTitle}
+                    onChange={(e) => setEditSeoTitle(e.target.value)}
+                    placeholder="Preporuka: do 60 karaktera"
+                    maxLength={70}
+                    disabled={savingSeo}
+                  />
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {editSeoTitle.length}/60
+                  </p>
+                </div>
+                <div>
+                  <Label htmlFor="seo-meta-desc">Meta opis (SEO)</Label>
+                  <Textarea
+                    id="seo-meta-desc"
+                    value={editSeoDescription}
+                    onChange={(e) => setEditSeoDescription(e.target.value)}
+                    placeholder="Preporuka: do 160 karaktera"
+                    rows={3}
+                    maxLength={200}
+                    disabled={savingSeo}
+                  />
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {editSeoDescription.length}/160
+                  </p>
+                </div>
+                <div>
+                  <Label htmlFor="seo-alt">Alt tekst (pristupačnost i SEO)</Label>
+                  <Input
+                    id="seo-alt"
+                    value={editAltText}
+                    onChange={(e) => setEditAltText(e.target.value)}
+                    placeholder="Opis slike za čitače ekrana"
+                    maxLength={150}
+                    disabled={savingSeo}
+                  />
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <Button
+                  variant="outline"
+                  className="flex-1"
+                  onClick={closeSeoEditor}
+                  disabled={savingSeo}
+                >
+                  Odustani
+                </Button>
+                <Button
+                  className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
+                  onClick={handleSaveSeo}
+                  disabled={savingSeo}
+                >
+                  {savingSeo ? "Čuvanje..." : "Sačuvaj"}
+                </Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </Layout>
   );
 }
