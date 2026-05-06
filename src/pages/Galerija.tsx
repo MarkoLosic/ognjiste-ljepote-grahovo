@@ -282,7 +282,66 @@ export default function Galerija() {
     }
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  function openSeoEditor(image: GalleryImage) {
+    setEditingImage(image);
+    setEditTitle(image.title || "");
+    setEditSeoTitle(image.seo_title || "");
+    setEditSeoDescription(image.seo_description || "");
+    setEditAltText(image.alt_text || "");
+  }
+
+  function closeSeoEditor() {
+    setEditingImage(null);
+    setEditTitle("");
+    setEditSeoTitle("");
+    setEditSeoDescription("");
+    setEditAltText("");
+  }
+
+  async function handleSaveSeo() {
+    if (!editingImage) return;
+    setSavingSeo(true);
+    try {
+      const { error } = await supabase
+        .from("gallery_images")
+        .update({
+          title: editTitle.trim() || null,
+          seo_title: editSeoTitle.trim() || null,
+          seo_description: editSeoDescription.trim() || null,
+          alt_text: editAltText.trim() || null,
+        })
+        .eq("id", editingImage.id);
+
+      if (error) throw error;
+
+      setDbImages((prev) =>
+        prev.map((img) =>
+          img.id === editingImage.id
+            ? {
+                ...img,
+                title: editTitle.trim() || null,
+                seo_title: editSeoTitle.trim() || null,
+                seo_description: editSeoDescription.trim() || null,
+                alt_text: editAltText.trim() || null,
+              }
+            : img,
+        ),
+      );
+
+      toast({ title: "Sačuvano", description: "SEO podaci su ažurirani." });
+      closeSeoEditor();
+    } catch (error: any) {
+      console.error("Error updating SEO:", error);
+      toast({
+        title: "Greška",
+        description: error.message || "Nije moguće sačuvati izmjene.",
+        variant: "destructive",
+      });
+    } finally {
+      setSavingSeo(false);
+    }
+  }
+
     const files = Array.from(e.target.files || []);
     
     if (files.length === 0) return;
