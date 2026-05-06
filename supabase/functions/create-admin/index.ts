@@ -34,6 +34,21 @@ Deno.serve(async (req) => {
   try {
     const { email, password } = await req.json();
 
+    // Input validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || typeof email !== "string" || email.length > 255 || !emailRegex.test(email)) {
+      return new Response(
+        JSON.stringify({ error: "Valid email address is required" }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+    if (!password || typeof password !== "string" || password.length < 12 || password.length > 128) {
+      return new Response(
+        JSON.stringify({ error: "Password must be between 12 and 128 characters" }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
     // Step 1: Verify Authentication
     const authHeader = req.headers.get("Authorization");
     if (!authHeader?.startsWith("Bearer ")) {
