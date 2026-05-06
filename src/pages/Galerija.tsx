@@ -441,30 +441,42 @@ export default function Galerija() {
                 >
                   <img
                     src={image.image_url}
-                    alt={image.title || "Galerija slika"}
+                    alt={image.alt_text || image.title || "Galerija slika"}
                     loading="lazy"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300 flex items-center justify-center pointer-events-none">
                     <ZoomIn className="text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 h-10 w-10" />
                   </div>
-                  {image.title && (
+                  {(image.seo_title || image.title) && (
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/80 to-transparent pointer-events-none">
                       <span className="text-primary-foreground text-sm font-medium">
-                        {image.title}
+                        {image.seo_title || image.title}
                       </span>
                     </div>
                   )}
                   {isAdmin && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleDelete(image);
-                      }}
-                      className="absolute top-2 right-2 p-2 bg-destructive text-destructive-foreground rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-destructive/90 z-10"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <div className="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openSeoEditor(image);
+                        }}
+                        className="p-2 bg-primary text-primary-foreground rounded-full hover:bg-primary/90"
+                        aria-label="Uredi SEO"
+                      >
+                        <Pencil className="h-4 w-4" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDelete(image);
+                        }}
+                        className="p-2 bg-destructive text-destructive-foreground rounded-full hover:bg-destructive/90"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
                   )}
                 </motion.div>
               ))}
