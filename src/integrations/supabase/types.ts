@@ -119,6 +119,35 @@ export type Database = {
         }
         Relationships: []
       }
+      village_images: {
+        Row: {
+          created_at: string
+          gallery_image_id: string | null
+          updated_at: string
+          village_name: string
+        }
+        Insert: {
+          created_at?: string
+          gallery_image_id?: string | null
+          updated_at?: string
+          village_name: string
+        }
+        Update: {
+          created_at?: string
+          gallery_image_id?: string | null
+          updated_at?: string
+          village_name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "village_images_gallery_image_id_fkey"
+            columns: ["gallery_image_id"]
+            isOneToOne: false
+            referencedRelation: "gallery_images"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
