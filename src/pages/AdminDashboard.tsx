@@ -733,6 +733,20 @@ export default function AdminDashboard() {
         </div>
       </section>
 
+      {/* Village Images Section */}
+      <section className="py-8 md:py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <VillageImagesManager />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Edit Dialog */}
       <Dialog open={!!editingActivity} onOpenChange={(open) => !open && closeEditDialog()}>
         <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
