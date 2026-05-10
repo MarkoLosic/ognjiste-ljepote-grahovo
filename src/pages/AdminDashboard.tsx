@@ -24,6 +24,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { AnalyticsDashboard } from "@/components/admin/AnalyticsDashboard";
+import { VillageImagesManager } from "@/components/admin/VillageImagesManager";
 import {
   Dialog,
   DialogContent,
