@@ -279,6 +279,32 @@ const otherVillages: Village[] = [
 
 export default function OstalaSela() {
   const [selected, setSelected] = useState<Village | null>(null);
+  const [imageMap, setImageMap] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const { data, error } = await supabase
+        .from("village_images")
+        .select("village_name, gallery_image_id, gallery_images(image_url)");
+      if (error || cancelled || !data) return;
+      const map: Record<string, string> = {};
+      for (const row of data as Array<{
+        village_name: string;
+        gallery_images: { image_url: string } | null;
+      }>) {
+        if (row.gallery_images?.image_url) {
+          map[row.village_name] = row.gallery_images.image_url;
+        }
+      }
+      setImageMap(map);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const resolveImage = (v: Village) => imageMap[v.name] ?? v.image;
 
   return (
     <Layout>
