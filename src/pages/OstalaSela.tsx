@@ -390,7 +390,7 @@ export default function OstalaSela() {
             <>
               <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                 <img
-                  src={selected.image}
+                  src={resolveImage(selected)}
                   alt={selected.name}
                   loading="lazy"
                   decoding="async"
