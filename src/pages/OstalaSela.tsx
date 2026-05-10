@@ -353,7 +353,7 @@ export default function OstalaSela() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={village.image}
+                    src={resolveImage(village)}
                     alt={village.name}
                     loading="lazy"
                     width={1024}
