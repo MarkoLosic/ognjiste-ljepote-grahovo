@@ -235,6 +235,7 @@ export default function Aktivnosti() {
                     size="icon"
                     onClick={() => goToPage(currentPage - 1)}
                     disabled={currentPage === 1}
+                    aria-label="Prethodna stranica"
                     className="h-10 w-10"
                   >
                     <ChevronLeft className="h-4 w-4" />
@@ -265,6 +266,7 @@ export default function Aktivnosti() {
                     size="icon"
                     onClick={() => goToPage(currentPage + 1)}
                     disabled={currentPage === totalPages}
+                    aria-label="Sljedeća stranica"
                     className="h-10 w-10"
                   >
                     <ChevronRight className="h-4 w-4" />
