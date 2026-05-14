@@ -12,6 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Progress } from "@/components/ui/progress";
 import { SmartImage } from "@/components/ui/SmartImage";
+import { useSEO } from "@/lib/seo";
 import heroImage from "@/assets/hero-mountains.jpg";
 import dinaraImage from "@/assets/dinara-mountain.jpg";
 import satorImage from "@/assets/sator-mountain.jpg";
@@ -73,6 +74,12 @@ function getUserFriendlyError(error: any, context: 'upload' | 'delete'): string 
 }
 
 export default function Galerija() {
+  useSEO({
+    title: "Galerija — fotografije Bosanskog Grahova",
+    description:
+      "Galerija fotografija prirode, planina, sela i znamenitosti opštine Bosansko Grahovo iz objektiva članova i posjetilaca.",
+    path: "/galerija",
+  });
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [dbImages, setDbImages] = useState<GalleryImage[]>([]);
