@@ -279,6 +279,12 @@ const otherVillages: Village[] = [
 ];
 
 export default function OstalaSela() {
+  useSEO({
+    title: "Ostala sela opštine Bosansko Grahovo",
+    description:
+      "Pregled svih 32 naselja opštine Bosansko Grahovo — kratki istorijski opisi i prirodne karakteristike grahovskih sela.",
+    path: "/ostala-sela",
+  });
   const [selected, setSelected] = useState<Village | null>(null);
   const [imageMap, setImageMap] = useState<Record<string, string>>({});
 
