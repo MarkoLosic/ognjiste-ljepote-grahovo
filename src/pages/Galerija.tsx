@@ -33,12 +33,12 @@ interface GalleryImage {
 
 // Static images as fallback
 const staticImages = [
-  { src: heroImage, alt: "Pogled na planine", category: "Priroda" },
-  { src: dinaraImage, alt: "Dinara", category: "Planine" },
-  { src: satorImage, alt: "Šator", category: "Planine" },
-  { src: village1, alt: "Tradicionalno selo", category: "Sela" },
-  { src: village2, alt: "Ruralni pejzaž", category: "Sela" },
-  { src: townCenter, alt: "Centar grada", category: "Grad" },
+  { src: heroImage, alt: "Pogled na planine Bosanskog Grahova", category: "Priroda" },
+  { src: dinaraImage, alt: "Planina Dinara", category: "Planine" },
+  { src: satorImage, alt: "Planina Šator", category: "Planine" },
+  { src: village1, alt: "Tradicionalno selo grahovskog kraja", category: "Sela" },
+  { src: village2, alt: "Ruralni pejzaž Grahova", category: "Sela" },
+  { src: townCenter, alt: "Centar Bosanskog Grahova", category: "Grad" },
 ];
 
 const MAX_TOTAL_SIZE = 100 * 1024 * 1024; // 100MB
