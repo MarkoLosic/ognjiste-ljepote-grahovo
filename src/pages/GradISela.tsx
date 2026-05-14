@@ -72,6 +72,12 @@ Stožišta nude jedinstven pogled na okolne planine i predstavljaju savršeno od
   reverse: false
 }];
 export default function GradISela() {
+  useSEO({
+    title: "Grad i sela Bosanskog Grahova — istorija i ljepote",
+    description:
+      "Istražite Bosansko Grahovo i okolna sela: Resanovci, Preodac, Peći, Obljaj, Stožišta, Uništa, Crni Lug i Korita — istorija, priroda i tradicija.",
+    path: "/grad-i-sela",
+  });
   return <Layout>
       {/* Header */}
       <section className="section-padding bg-cream">
