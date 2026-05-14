@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://ognjiste-ljepote-grahovo.lovable.app/sitemap.xml

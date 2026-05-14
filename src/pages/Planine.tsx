@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Compass, TrendingUp, Sun, Wind } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { useSEO } from "@/lib/seo";
 import dinaraImage from "@/assets/dinara-new.jpg";
 import satorImage from "@/assets/sator-mountain.jpg";
 import uilicaImage from "@/assets/uilica-mountain.jpg";
@@ -51,6 +52,19 @@ const mountains = [
 ];
 
 export default function Planine() {
+  useSEO({
+    title: "Planine Bosanskog Grahova — Dinara, Šator, Uilica",
+    description:
+      "Vodič kroz planine grahovskog kraja: Dinara, Šator, Uilica, Jadovnik i Staretina — visine, opisi, znamenitosti i savjeti za posjet.",
+    path: "/planine",
+    jsonLdId: "ld-planine",
+    jsonLd: mountains.map((m) => ({
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      name: m.name,
+      description: m.description.slice(0, 200),
+    })),
+  });
   return (
     <Layout>
       {/* Header */}
@@ -118,7 +132,7 @@ export default function Planine() {
                 <div className="relative">
                   <img
                     src={mountain.image}
-                    alt={mountain.name}
+                    alt={`Planina ${mountain.name}`}
                     loading="lazy"
                     decoding="async"
                     className="rounded-lg shadow-lg w-full h-[400px] md:h-[500px] object-cover"

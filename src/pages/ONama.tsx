@@ -6,8 +6,30 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useSEO } from "@/lib/seo";
 import heroImage from "@/assets/hero-mountains.jpg";
 export default function ONama() {
+  useSEO({
+    title: "O nama — Ognjište Bosansko Grahovo",
+    description:
+      "Upoznajte Planinarsko Ekološko Društvo Ognjište Bosansko Grahovo — naša priča, misija i kontakt forma za sve upite.",
+    path: "/o-nama",
+    jsonLdId: "ld-onama",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Planinarsko Ekološko Društvo Ognjište Bosansko Grahovo",
+      description:
+        "Društvo posvećeno očuvanju prirode, planinarenju i promociji kulturne baštine Bosanskog Grahova.",
+      url: "https://ognjiste-ljepote-grahovo.lovable.app/o-nama",
+      areaServed: { "@type": "Place", name: "Bosansko Grahovo" },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        availableLanguage: ["bs", "hr", "sr"],
+      },
+    },
+  });
   const [formData, setFormData] = useState({
     name: "",
     email: "",

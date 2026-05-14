@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { useSEO } from "@/lib/seo";
 import townCenter from "@/assets/town-center.jpg";
 import village1 from "@/assets/village-1.jpg";
 import village2 from "@/assets/village-2.jpg";
@@ -71,6 +72,12 @@ Stožišta nude jedinstven pogled na okolne planine i predstavljaju savršeno od
   reverse: false
 }];
 export default function GradISela() {
+  useSEO({
+    title: "Grad i sela Bosanskog Grahova — istorija i ljepote",
+    description:
+      "Istražite Bosansko Grahovo i okolna sela: Resanovci, Preodac, Peći, Obljaj, Stožišta, Uništa, Crni Lug i Korita — istorija, priroda i tradicija.",
+    path: "/grad-i-sela",
+  });
   return <Layout>
       {/* Header */}
       <section className="section-padding bg-cream">
@@ -196,7 +203,7 @@ export default function GradISela() {
               duration: 0.6,
               delay: 0.2
             }} className={`relative ${village.reverse ? "md:col-start-1 md:row-start-1" : ""}`}>
-                  <img src={village.image} alt={village.name} loading="lazy" decoding="async" className="rounded-lg shadow-lg w-full h-[350px] md:h-[400px] object-cover" />
+                  <img src={village.image} alt={`Selo ${village.name}`} loading="lazy" decoding="async" className="rounded-lg shadow-lg w-full h-[350px] md:h-[400px] object-cover" />
                   <div className={`absolute -bottom-4 ${village.reverse ? "-right-4" : "-left-4"} w-20 h-20 bg-accent/30 rounded-lg -z-10`} />
                 </motion.div>
               </motion.div>)}
@@ -241,7 +248,7 @@ export default function GradISela() {
           }}>
                 <Link to="/ostala-sela" className="card-nature group block h-full hover:shadow-xl transition-shadow">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={village.image} alt={village.name} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <img src={village.image} alt={`Selo ${village.name}`} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   <div className="p-5">
                     <h3 className="font-serif text-xl font-semibold text-foreground mb-2">

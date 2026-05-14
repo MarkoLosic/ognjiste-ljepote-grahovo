@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { useSEO } from "@/lib/seo";
 import {
   Dialog,
   DialogContent,
@@ -278,6 +279,12 @@ const otherVillages: Village[] = [
 ];
 
 export default function OstalaSela() {
+  useSEO({
+    title: "Ostala sela opštine Bosansko Grahovo",
+    description:
+      "Pregled svih 32 naselja opštine Bosansko Grahovo — kratki istorijski opisi i prirodne karakteristike grahovskih sela.",
+    path: "/ostala-sela",
+  });
   const [selected, setSelected] = useState<Village | null>(null);
   const [imageMap, setImageMap] = useState<Record<string, string>>({});
 
@@ -354,7 +361,7 @@ export default function OstalaSela() {
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={resolveImage(village)}
-                    alt={village.name}
+                    alt={`Selo ${village.name}`}
                     loading="lazy"
                     width={1024}
                     height={768}
@@ -362,9 +369,9 @@ export default function OstalaSela() {
                   />
                 </div>
                 <div className="p-5 flex-1 flex flex-col">
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
+                  <h2 className="font-serif text-xl font-semibold text-foreground mb-2">
                     {village.name}
-                  </h3>
+                  </h2>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {village.description}
                   </p>
@@ -391,7 +398,7 @@ export default function OstalaSela() {
               <div className="relative h-64 sm:h-80 w-full overflow-hidden">
                 <img
                   src={resolveImage(selected)}
-                  alt={selected.name}
+                  alt={`Selo ${selected.name}`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
