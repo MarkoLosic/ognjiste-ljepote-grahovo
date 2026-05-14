@@ -4,6 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { supabase } from "@/integrations/supabase/client";
 import { Calendar, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useSEO } from "@/lib/seo";
 
 interface Activity {
   id: string;
@@ -22,6 +23,22 @@ export default function Aktivnosti() {
   const [totalCount, setTotalCount] = useState(0);
 
   const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
+
+  useSEO({
+    title: "Aktivnosti — Ognjište Bosansko Grahovo",
+    description:
+      "Pratite aktivnosti, događaje i akcije Planinarsko Ekološkog Društva Ognjište Bosansko Grahovo u zajednici.",
+    path: "/aktivnosti",
+    jsonLdId: "ld-aktivnosti",
+    jsonLd: activities.map((a) => ({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: a.title,
+      datePublished: a.created_at,
+      image: a.image_url,
+      description: a.description ?? undefined,
+    })),
+  });
 
   useEffect(() => {
     fetchActivities();
