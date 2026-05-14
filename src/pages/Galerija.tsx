@@ -540,6 +540,7 @@ export default function Galerija() {
                           handleDelete(image);
                         }}
                         className="p-2 bg-destructive text-destructive-foreground rounded-full hover:bg-destructive/90"
+                        aria-label="Obriši sliku"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
