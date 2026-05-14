@@ -56,6 +56,7 @@ export function Navbar() {
             {user && isAdmin && (
               <Link
                 to="/admin"
+                aria-label="Admin Dashboard"
                 className={cn(
                   "ml-2 p-2 rounded-md transition-colors",
                   location.pathname === "/admin"
@@ -72,6 +73,7 @@ export function Navbar() {
             {user ? (
               <button
                 onClick={() => signOut()}
+                aria-label="Odjavi se"
                 className="ml-1 p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                 title="Odjavi se"
               >
@@ -80,6 +82,7 @@ export function Navbar() {
             ) : (
               <Link
                 to="/login"
+                aria-label="Admin prijava"
                 className="ml-2 p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                 title="Admin prijava"
               >
