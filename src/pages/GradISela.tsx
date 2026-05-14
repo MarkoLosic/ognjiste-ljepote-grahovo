@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { useSEO } from "@/lib/seo";
 import townCenter from "@/assets/town-center.jpg";
 import village1 from "@/assets/village-1.jpg";
 import village2 from "@/assets/village-2.jpg";
