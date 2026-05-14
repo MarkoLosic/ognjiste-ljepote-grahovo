@@ -85,7 +85,11 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Planine Bosanskog Grahova"
+            alt="Planine Bosanskog Grahova - Dinara i Šator"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover"
           />
           <div 
