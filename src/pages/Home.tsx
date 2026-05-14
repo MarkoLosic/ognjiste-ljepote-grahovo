@@ -1,81 +1,40 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowRight, Mountain, Trees, Camera } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { HeroButton } from "@/components/ui/HeroButton";
+import { useSEO } from "@/lib/seo";
 import heroImage from "@/assets/hero-mountains.jpg";
 
-const SEO_TITLE = "Ognjište Bosansko Grahovo | Turistički vodič i smještaj";
-const SEO_DESCRIPTION =
-  "Otkrijte prirodne ljepote Bosanskog Grahova, Šatorsko jezero i istorijske znamenitosti. Planirajte svoj odmor uz Ognjište.";
-const SEO_IMAGE =
-  "https://yjrvyzpqraaljaipflls.supabase.co/storage/v1/object/public/gallery/images/1769273004468-eek897az-24.jpg";
-
-function setMeta(selector: string, attr: string, value: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(selector);
-  if (!el) {
-    el = document.createElement("meta");
-    const [key, val] = selector.replace(/[\[\]"]/g, "").split("=");
-    el.setAttribute(key, val);
-    document.head.appendChild(el);
-  }
-  el.setAttribute(attr, value);
-}
-
 export default function Home() {
-  useEffect(() => {
-    document.title = SEO_TITLE;
-    setMeta('meta[name="description"]', "content", SEO_DESCRIPTION);
-    setMeta('meta[property="og:title"]', "content", SEO_TITLE);
-    setMeta('meta[property="og:description"]', "content", SEO_DESCRIPTION);
-    setMeta('meta[property="og:type"]', "content", "website");
-    setMeta('meta[property="og:image"]', "content", SEO_IMAGE);
-    setMeta('meta[property="og:url"]', "content", window.location.href);
-    setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
-    setMeta('meta[name="twitter:title"]', "content", SEO_TITLE);
-    setMeta('meta[name="twitter:description"]', "content", SEO_DESCRIPTION);
-    setMeta('meta[name="twitter:image"]', "content", SEO_IMAGE);
-
-    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", window.location.origin + "/");
-
-    const SCHEMA_ID = "ld-localbusiness-home";
-    let script = document.head.querySelector<HTMLScriptElement>(`script#${SCHEMA_ID}`);
-    if (!script) {
-      script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.id = SCHEMA_ID;
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify({
+  useSEO({
+    title: "Ognjište Bosansko Grahovo — priroda i baština",
+    description:
+      "Otkrijte prirodne ljepote Bosanskog Grahova, Šatorsko jezero, planine Dinaru i Šator i bogatu kulturnu baštinu kraja.",
+    path: "/",
+    jsonLdId: "ld-localbusiness-home",
+    jsonLd: {
       "@context": "https://schema.org",
       "@type": ["LocalBusiness", "TouristAttraction"],
       name: "Ognjište Bosansko Grahovo",
-      description: SEO_DESCRIPTION,
-      image: SEO_IMAGE,
-      url: window.location.origin + "/",
+      description:
+        "Planinarsko Ekološko Društvo \"Ognjište Bosansko Grahovo\" — vodič kroz prirodu, planine i sela opštine Bosansko Grahovo.",
+      url: "https://ognjiste-ljepote-grahovo.lovable.app/",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Bosansko Grahovo",
         addressCountry: "BA",
       },
-      areaServed: {
-        "@type": "Place",
-        name: "Bosansko Grahovo",
-      },
-      knowsAbout: ["Turistički vodič", "Planinarenje", "Šatorsko jezero", "Dinara", "Kulturna baština"],
-    });
-
-    return () => {
-      document.head.querySelector(`script#${SCHEMA_ID}`)?.remove();
-    };
-  }, []);
+      areaServed: { "@type": "Place", name: "Bosansko Grahovo" },
+      knowsAbout: [
+        "Turistički vodič",
+        "Planinarenje",
+        "Šatorsko jezero",
+        "Dinara",
+        "Kulturna baština",
+      ],
+    },
+  });
 
   return (
     <Layout>
