@@ -12,21 +12,29 @@ export default function ONama() {
   useSEO({
     title: "O nama — Ognjište Bosansko Grahovo",
     description:
-      "Upoznajte Planinarsko Ekološko Društvo Ognjište Bosansko Grahovo — naša priča, misija i kontakt forma za sve upite.",
+      "Upoznajte Planinarsko Ekološko Društvo Ognjište Bosansko Grahovo — naša priča, misija i kontakt.",
     path: "/o-nama",
     jsonLdId: "ld-onama",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "Planinarsko Ekološko Društvo Ognjište Bosansko Grahovo",
+      alternateName: "Ognjište Bosansko Grahovo",
       description:
-        "Društvo posvećeno očuvanju prirode, planinarenju i promociji kulturne baštine Bosanskog Grahova.",
-      url: "https://ognjiste-ljepote-grahovo.lovable.app/o-nama",
-      areaServed: { "@type": "Place", name: "Bosansko Grahovo" },
+        "Društvo posvećeno očuvanju prirode, planinarenju i promociji kulturne baštine Bosanskog Grahova i njegovih planina Dinare i Šatora.",
+      url: "https://ognjiste-ljepote-grahovo.lovable.app",
+      areaServed: {
+        "@type": "City",
+        name: "Bosansko Grahovo",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Kanton 10",
+        },
+      },
       contactPoint: {
         "@type": "ContactPoint",
-        contactType: "customer support",
-        availableLanguage: ["bs", "hr", "sr"],
+        contactType: "Informacije i upiti",
+        availableLanguage: ["Bosnian", "Croatian", "Serbian"],
       },
     },
   });
